@@ -48,7 +48,7 @@ header{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7em;
+  margin-top: 6.2em;
 }
 
 .raam{
@@ -58,4 +58,12 @@ header{
   width: 3.6em;
 }
 
+.background{
+  position: absolute;
+  top: -4em;
+  left: 0em;
 
+  width: 100%;
+
+  z-index: -1;
+}
