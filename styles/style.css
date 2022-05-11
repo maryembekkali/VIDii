@@ -3,6 +3,15 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+    font-family: 'wicked_mouseregular';
+    src: url('../font/wicked_mouse_demo-webfont.woff2') format('woff2'),
+         url('../font/wicked_mouse_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
   height:100%;
   margin:0;
@@ -15,5 +24,31 @@ button:not([disabled]) {
 /* jouw CSS vanaf hier */
 
 h1 {
-  color:crimson;
+  color: #FF69B6;
+  font-family: wicked_mouseregular;
 }
+
+header{
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.logo {
+  width: 20em;
+
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.clubhouse {
+  width: 45vw;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7em;
+}
+
+
