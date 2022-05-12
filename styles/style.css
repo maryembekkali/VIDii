@@ -37,9 +37,17 @@ header{
 .logo {
   width: 20em;
 
-  position: absolute;
+  position: fixed;
   top: 2em;
   right: 2em;
+  font-size: 1em;
+
+  background: none;
+  border: none;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .clubhouse {
@@ -51,11 +59,21 @@ header{
   margin-top: 6.2em;
 }
 
-.raam{
+.raam img{
   position: absolute;
-  top: 28.7em;
-  left: 37.8em;
-  width: 3.6em;
+  top: 30em;
+  left: 40em;
+  width: 5em;
+
+  background: none;
+  border: none;
+}
+
+.hand{
+  position: absolute;
+  top: 22em;
+  left: 20.5em;
+  width: 12vw;
 }
 
 .background{
@@ -69,18 +87,15 @@ header{
 }
 
 
-/*img.ikHebHetLogoVeranderd {
+.logo img.ikHebHetLogoVeranderd {
   content: url("../images/minnielogo.png");
 }
 
-img.ikHebHetClubhuisVeranderd {
+img.clubhouse.ikHebHetHuisVeranderd {
   content: url("../images/clubhouseroze.png");
-}*/
-
-img.ikHebHetLogoVeranderd {
-  content: url("../images/minnielogo.png");
 }
 
-img.ikHebHetHuisVeranderd {
+
+.raam img.minnie1isgekomen {
   content: url("../images/clubhouseroze.png");
 }

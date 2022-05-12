@@ -1,56 +1,29 @@
 // JavaScript Document
 console.log("Howdy!");
 
-var deButton = document.querySelector("button");
-var hetLogo = document.querySelector("img");
+var deButton = document.querySelector(".logo");
 
-var mickeyLogo = true;
+var deButtonImg = document.querySelector(".logo img");
+var hetHuisImg = document.querySelector(".clubhouse");
+
+
 
 deButton.addEventListener("click", ikHebVeranderd);
 
 function ikHebVeranderd() {
-	hetLogo.classList.toggle("ikHebHetLogoVeranderd");
-	
-	if (mickeyLogo == true){
-		deButton.textContent = "logo terug veranderen naar mickey";
-		mickeyLogo = false;
-	}
-	else {
-		deButton.textContent = "logo veranderen naar minnie ";
-		mickeyLogo = true;
-	}
+	deButtonImg.classList.toggle("ikHebHetLogoVeranderd");
+	hetHuisImg.classList.toggle("ikHebHetHuisVeranderd");
 }
 
-// var hetLogo = document.querySelector("img");
-// var hetClubhuis = document.querySelector("img");
 
-// hetLogo.addEventListener("click", ikHebVeranderd);
-// hetClubhuis.addEventListener("click", ikHebVeranderd);
 
-// function ikHebVeranderd() {
-// 	hetLogo.classList.toggle("ikHebHetLogoVeranderd");
-// 	hetClubhuis.classList.toggle("ikHebHetClubhuisVeranderd");
-// }
+var deButton2 = document.querySelector(".raam");
 
-var deButton = document.querySelector("button");
-var hetLogo = document.querySelector("img");
-var hetHuis = document.querySelector("img");
+var deButton2Img = document.querySelector(".raam img");
 
-var mickeyLogo = true;
-// var mickeyHuis = true;
 
-deButton.addEventListener("click", ikHebVeranderd);
+deButton2.addEventListener("click", minnie1komt);
 
-function ikHebVeranderd() {
-	hetLogo.classList.toggle("ikHebHetLogoVeranderd");
-	hetHuis.classList.toggle("ikHebHetHuisVeranderd");
-	
-	if (mickeyLogo == true){
-		deButton.textContent = "logo terug veranderen naar mickey";
-		mickeyLogo = false;
-	}
-	else {
-		deButton.textContent = "logo veranderen naar minnie ";
-		mickeyLogo = true;
-	}
+function minnie1komt() {
+	deButton2Img.classList.toggle("minnie1isgekomen");
 }
