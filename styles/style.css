@@ -67,3 +67,20 @@ header{
 
   z-index: -1;
 }
+
+
+/*img.ikHebHetLogoVeranderd {
+  content: url("../images/minnielogo.png");
+}
+
+img.ikHebHetClubhuisVeranderd {
+  content: url("../images/clubhouseroze.png");
+}*/
+
+img.ikHebHetLogoVeranderd {
+  content: url("../images/minnielogo.png");
+}
+
+img.ikHebHetHuisVeranderd {
+  content: url("../images/clubhouseroze.png");
+}

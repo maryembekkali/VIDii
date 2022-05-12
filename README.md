@@ -13,10 +13,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Maryem Bekkali
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: Rood
 
 
 
@@ -25,10 +25,25 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 # Je plan
 
 <details open>
-  <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
+  <summary>
+Concept:
+Ik heb gekozen voor de evolutie van Minnie Mouse. Dit wil ik weergeven doormiddel van het Mickey Mouse clubhouse.
+Aan het begin (beginscherm) wil ik het concept van de magische woorden toepassen waarbij Mickey(of Minnie) vraag aan de kijker wat de magische woorden zijn voordat de clubhouse verschijnt.
+
+Interactie/bediening:
+Het Mickey Mouse clubhouse zal 7 ramen bevatten die allemaal een versie zullen laten zien van Minnie. Door op een raam te klikken zal Minnie uit de voordeur van het clubhouse komen.
+
+Progressive disclosure:
+Op het scherm wil ik per versie van Minnie Mouse ongeveer een regel tekst weergeven. Voor meer informatie wil ik een link toevoegen op de pagina naar een Youtube video waarin de evolutie van Minnie uitgebreid wordt besproken en weergegeven.
+
+Details:
+
+Door op het handje van het clubhouse te klikken ontstaat er een regenboog op de achtergrond.
+Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Minnie Mouse clubhouse'. Hierbij wil ik het huis ook veranderen in de Minnie in plaats van Mickey.
+  </summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/schetsen.png" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
