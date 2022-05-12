@@ -162,6 +162,7 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   Korte omschrijving met plaatje(s)
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/schetsen.png" width="375px" alt="eerste versie/schets">
 </details>
 
 
