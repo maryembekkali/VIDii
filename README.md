@@ -37,7 +37,6 @@ Progressive disclosure:
 Op het scherm wil ik per versie van Minnie Mouse ongeveer een regel tekst weergeven. Voor meer informatie wil ik een link toevoegen op de pagina naar een Youtube video waarin de evolutie van Minnie uitgebreid wordt besproken en weergegeven.
 
 Details:
-
 Door op het handje van het clubhouse te klikken ontstaat er een regenboog op de achtergrond.
 Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Minnie Mouse clubhouse'. Hierbij wil ik het huis ook veranderen in de Minnie in plaats van Mickey.
   </summary>
