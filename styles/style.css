@@ -64,7 +64,9 @@ header{
   top: 30em;
   left: 40em;
   width: 5em;
+}
 
+.raam {
   background: none;
   border: none;
 }
@@ -96,6 +98,36 @@ img.clubhouse.ikHebHetHuisVeranderd {
 }
 
 
+
+
+
 .raam img.minnie1isgekomen {
-  content: url("../images/clubhouseroze.png");
+  animation-name: minnieKomtNaarBuiten;
+  animation-duration: 1s;
+}
+
+img.minnie.minnie1isgekomen {
+  animation-name: minnieKomtNaarBuiten;
+  animation-duration: 1s;
+}
+
+@keyframes minnieKomtNaarBuiten {
+  0%{
+    transform:rotate(0turn);
+    top: 30em;
+    left: 40em;
+  }
+  100%{
+    transform:rotate(1turn);
+    top: 50em;
+    left: 60em;
+  }
+}
+
+.minnie{
+  width: 10vw;
+
+  position: absolute;
+  top: 30em;
+  left: 40em;
 }

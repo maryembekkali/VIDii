@@ -7,7 +7,6 @@ var deButtonImg = document.querySelector(".logo img");
 var hetHuisImg = document.querySelector(".clubhouse");
 
 
-
 deButton.addEventListener("click", ikHebVeranderd);
 
 function ikHebVeranderd() {
@@ -17,13 +16,18 @@ function ikHebVeranderd() {
 
 
 
+
+
 var deButton2 = document.querySelector(".raam");
 
-var deButton2Img = document.querySelector(".raam img");
+var hetRaam = document.querySelector(".raam img");
+var deMinnieImg = document.querySelector(".minnie img");
 
 
 deButton2.addEventListener("click", minnie1komt);
 
 function minnie1komt() {
-	deButton2Img.classList.toggle("minnie1isgekomen");
+	hetRaam.classList.toggle("minnie1isgekomen");
+	deMinnieImg.classList.toggle("minnie1isgekomen")
+
 }
