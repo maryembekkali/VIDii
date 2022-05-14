@@ -137,22 +137,3 @@ function minnie7komt() {
 	deMinnie7Img.classList.toggle("minnie7isgekomen")
 	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
-
-
-
-
-
-// ////////
-// // DEUR
-// ////////
-// // var raamButton7 = document.querySelector(".raam7");
-
-// // var raam7 = document.querySelector(".raam7 img");
-// var deDeurImg = document.querySelector(".deur");
-
-
-// raamButton7.addEventListener("click", deurGaatOpen);
-
-// function deurGaatOpen() {
-// 	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
-// }
