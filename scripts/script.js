@@ -18,22 +18,6 @@ function ikHebVeranderd() {
 
 
 
-// var deButton2 = document.querySelector(".raam");
-
-// var hetRaam = document.querySelector(".raam img");
-// var deMinnieImg = document.querySelector(".minnie");
-
-
-// deButton2.addEventListener("click", minnie1komt);
-
-// function minnie1komt() {
-// 	deMinnieImg.classList.toggle("minnie1isgekomen")
-// }
-
-
-
-
-
 ////////
 // RAAM1
 ////////
@@ -41,17 +25,19 @@ var raamButton1 = document.querySelector(".raam1");
 
 var raam1 = document.querySelector(".raam1 img");
 var deMinnie1Img = document.querySelector(".minnie1");
+var deDeurImg = document.querySelector(".deur");
 
 
 raamButton1.addEventListener("click", minnie1komt);
 
 function minnie1komt() {
 	deMinnie1Img.classList.toggle("minnie1isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
 ////////
-// RAAM1
+// RAAM2
 ////////
 var raamButton2 = document.querySelector(".raam2");
 
@@ -63,6 +49,7 @@ raamButton2.addEventListener("click", minnie2komt);
 
 function minnie2komt() {
 	deMinnie2Img.classList.toggle("minnie2isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
@@ -79,6 +66,7 @@ raamButton3.addEventListener("click", minnie3komt);
 
 function minnie3komt() {
 	deMinnie3Img.classList.toggle("minnie3isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
@@ -95,6 +83,7 @@ raamButton4.addEventListener("click", minnie4komt);
 
 function minnie4komt() {
 	deMinnie4Img.classList.toggle("minnie4isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
@@ -111,6 +100,7 @@ raamButton5.addEventListener("click", minnie5komt);
 
 function minnie5komt() {
 	deMinnie5Img.classList.toggle("minnie5isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
@@ -127,6 +117,7 @@ raamButton6.addEventListener("click", minnie6komt);
 
 function minnie6komt() {
 	deMinnie6Img.classList.toggle("minnie6isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
 
 
@@ -141,6 +132,27 @@ var deMinnie7Img = document.querySelector(".minnie7");
 
 raamButton7.addEventListener("click", minnie7komt);
 
+
 function minnie7komt() {
 	deMinnie7Img.classList.toggle("minnie7isgekomen")
+	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
+
+
+
+
+
+// ////////
+// // DEUR
+// ////////
+// // var raamButton7 = document.querySelector(".raam7");
+
+// // var raam7 = document.querySelector(".raam7 img");
+// var deDeurImg = document.querySelector(".deur");
+
+
+// raamButton7.addEventListener("click", deurGaatOpen);
+
+// function deurGaatOpen() {
+// 	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+// }
