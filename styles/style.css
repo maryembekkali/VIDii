@@ -51,24 +51,101 @@ header{
 }
 
 .clubhouse {
-  width: 45vw;
+ /* width: 45vw;*/
 
   display: block;
   margin-left: auto;
   margin-right: auto;
+  /*margin-top: 6.9em;*/
+  width: 45vw;
   margin-top: 6.2em;
 }
 
-.raam img{
-  position: absolute;
-  top: 30em;
-  left: 40em;
-  width: 5em;
-}
 
-.raam {
+
+
+
+/**********/
+/*DE RAMEN*/
+/**********/
+
+.raam1 img{
   background: none;
   border: none;
+
+  width: 4.5em;
+  position: absolute;
+  top: 32.3em;
+  left: 46.5em;
+}
+
+.raam2 img{
+  background: none;
+  border: none;
+
+  width: 2.8em;
+  position: absolute;
+  top: 33.2em;
+  left: 51.7em;
+}
+
+.raam3 img{
+  background: none;
+  border: none;
+
+  width: 3.2em;
+  position: absolute;
+  top: 33em;
+  left: 55.9em;
+}
+
+.raam4 img{
+  background: none;
+  border: none;
+
+  width: 3.8em;
+  position: absolute;
+  top: 37.8em;
+  left: 43.2em;
+}
+
+.raam5 img{
+  background: none;
+  border: none;
+
+  width: 3.1em;
+  position: absolute;
+  top: 38.8em;
+  left: 47.8em;
+}
+
+.raam6 img{
+  background: none;
+  border: none;
+
+  width: 4.2em;
+  position: absolute;
+  top: 39em;
+  left: 51.5em;
+}
+
+.raam7 img{
+  background: none;
+  border: none;
+
+  width: 3em;
+  position: absolute;
+  top: 39.2em;
+  left: 56em;
+}
+
+
+
+.deur {
+  width: 5.5em;
+  position: absolute;
+  top: 30.7em;
+  left: 56.8em;
 }
 
 .hand{
@@ -80,7 +157,7 @@ header{
 
 .background{
   position: absolute;
-  top: -4em;
+  top: 0em;
   left: 0em;
 
   width: 100%;
@@ -89,6 +166,12 @@ header{
 }
 
 
+
+
+
+/*****************/
+/*LOGO VERANDEREN*/
+/*****************/
 .logo img.ikHebHetLogoVeranderd {
   content: url("../images/minnielogo.png");
 }
@@ -101,33 +184,186 @@ img.clubhouse.ikHebHetHuisVeranderd {
 
 
 
-.raam img.minnie1isgekomen {
-  animation-name: minnieKomtNaarBuiten;
-  animation-duration: 1s;
-}
-
-img.minnie.minnie1isgekomen {
-  animation-name: minnieKomtNaarBuiten;
-  animation-duration: 1s;
-}
-
-@keyframes minnieKomtNaarBuiten {
-  0%{
-    transform:rotate(0turn);
-    top: 30em;
-    left: 40em;
-  }
-  100%{
-    transform:rotate(1turn);
-    top: 50em;
-    left: 60em;
-  }
-}
-
-.minnie{
-  width: 10vw;
+/*********/
+/*MINNIES*/
+/*********/
+.minnie1{
+  width: 5.2vw;
 
   position: absolute;
-  top: 30em;
-  left: 40em;
+  top: 30.6em;
+  left: 56em;
+}
+
+.minnie2{
+  width: 4.6vw;
+
+  position: absolute;
+  top: 30.5em;
+  left: 56em;
+}
+
+.minnie3{
+  width: 4.8vw;
+
+  position: absolute;
+  top: 30.3em;
+  left: 55.9em;
+}
+
+.minnie4{
+  width: 4.3vw;
+
+  position: absolute;
+  top: 30.3em;
+  left: 56.2em;
+}
+
+.minnie5{
+  width: 4.6vw;
+
+  position: absolute;
+  top: 30.4em;
+  left: 56em;
+}
+
+.minnie6{
+  width: 4.4vw;
+
+  position: absolute;
+  top: 30.6em;
+  left: 55.9em;
+}
+
+.minnie7{
+  width: 4.2vw;
+
+  position: absolute;
+  top: 30.6em;
+  left: 56.3em;
+}
+
+
+
+
+
+/****************************/
+/*MINNIES KOMEN NAAR BUIETEN*/
+/****************************/
+img.minnie1.minnie1isgekomen {
+  animation-name: minnie1KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie1KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie2.minnie2isgekomen {
+  animation-name: minnie2KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie2KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie3.minnie3isgekomen {
+  animation-name: minnie3KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie3KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie4.minnie4isgekomen {
+  animation-name: minnie4KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie4KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie5.minnie5isgekomen {
+  animation-name: minnie5KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie5KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie6.minnie6isgekomen {
+  animation-name: minnie6KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie6KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.5);
+  }
+}
+
+
+img.minnie7.minnie7isgekomen {
+  animation-name: minnie7KomtNaarBuiten;
+  animation-duration: 1s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes minnie7KomtNaarBuiten {
+  0% {
+    transform: translate(-9em, 9em) rotate(0) translate(9em, -9em) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(-4em, 4em) rotate(60deg) translate(4em, -4em) rotate(-60deg) scale(1.9);
+  }
 }

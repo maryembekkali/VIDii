@@ -18,16 +18,129 @@ function ikHebVeranderd() {
 
 
 
-var deButton2 = document.querySelector(".raam");
+// var deButton2 = document.querySelector(".raam");
 
-var hetRaam = document.querySelector(".raam img");
-var deMinnieImg = document.querySelector(".minnie img");
+// var hetRaam = document.querySelector(".raam img");
+// var deMinnieImg = document.querySelector(".minnie");
 
 
-deButton2.addEventListener("click", minnie1komt);
+// deButton2.addEventListener("click", minnie1komt);
+
+// function minnie1komt() {
+// 	deMinnieImg.classList.toggle("minnie1isgekomen")
+// }
+
+
+
+
+
+////////
+// RAAM1
+////////
+var raamButton1 = document.querySelector(".raam1");
+
+var raam1 = document.querySelector(".raam1 img");
+var deMinnie1Img = document.querySelector(".minnie1");
+
+
+raamButton1.addEventListener("click", minnie1komt);
 
 function minnie1komt() {
-	hetRaam.classList.toggle("minnie1isgekomen");
-	deMinnieImg.classList.toggle("minnie1isgekomen")
+	deMinnie1Img.classList.toggle("minnie1isgekomen")
+}
 
+
+////////
+// RAAM1
+////////
+var raamButton2 = document.querySelector(".raam2");
+
+var raam2 = document.querySelector(".raam2 img");
+var deMinnie2Img = document.querySelector(".minnie2");
+
+
+raamButton2.addEventListener("click", minnie2komt);
+
+function minnie2komt() {
+	deMinnie2Img.classList.toggle("minnie2isgekomen")
+}
+
+
+////////
+// RAAM3
+////////
+var raamButton3 = document.querySelector(".raam3");
+
+var raam3 = document.querySelector(".raam3 img");
+var deMinnie3Img = document.querySelector(".minnie3");
+
+
+raamButton3.addEventListener("click", minnie3komt);
+
+function minnie3komt() {
+	deMinnie3Img.classList.toggle("minnie3isgekomen")
+}
+
+
+////////
+// RAAM4
+////////
+var raamButton4 = document.querySelector(".raam4");
+
+var raam4 = document.querySelector(".raam4 img");
+var deMinnie4Img = document.querySelector(".minnie4");
+
+
+raamButton4.addEventListener("click", minnie4komt);
+
+function minnie4komt() {
+	deMinnie4Img.classList.toggle("minnie4isgekomen")
+}
+
+
+////////
+// RAAM5
+////////
+var raamButton5 = document.querySelector(".raam5");
+
+var raam5 = document.querySelector(".raam5 img");
+var deMinnie5Img = document.querySelector(".minnie5");
+
+
+raamButton5.addEventListener("click", minnie5komt);
+
+function minnie5komt() {
+	deMinnie5Img.classList.toggle("minnie5isgekomen")
+}
+
+
+////////
+// RAAM6
+////////
+var raamButton6 = document.querySelector(".raam6");
+
+var raam6 = document.querySelector(".raam6 img");
+var deMinnie6Img = document.querySelector(".minnie6");
+
+
+raamButton6.addEventListener("click", minnie6komt);
+
+function minnie6komt() {
+	deMinnie6Img.classList.toggle("minnie6isgekomen")
+}
+
+
+////////
+// RAAM7
+////////
+var raamButton7 = document.querySelector(".raam7");
+
+var raam7 = document.querySelector(".raam7 img");
+var deMinnie7Img = document.querySelector(".minnie7");
+
+
+raamButton7.addEventListener("click", minnie7komt);
+
+function minnie7komt() {
+	deMinnie7Img.classList.toggle("minnie7isgekomen")
 }
