@@ -74,7 +74,7 @@ header{
   top: 0em;
   left: 0em;
 
-  width: 100%;
+  width: 100vw;
 
   z-index: -1;
 }
@@ -89,11 +89,86 @@ ul{
   list-style: none;
 }
 
+ul.ramen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  width: 25vw;
+  height: 0vw;
+  /*margin-top: -10em;*/
+  margin: auto;
+
+}
+
+ul .ramen li{
+/*  padding: 0;
+  margin: 0;*/
+  width: 0vw;
+}
+
 .raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
   background: none;
   border: none;
 }
 
+ul.ramen li:nth-of-type(1n){
+  grid-area: 1 / 2;
+}
+ul.ramen li:nth-of-type(2n){
+  grid-area: 1 / 3;
+}
+ul.ramen li:nth-of-type(3n){
+  grid-area: 1 / 4;
+}
+ul.ramen li:nth-of-type(4n){
+  grid-area: 2 / 1;
+}
+ul.ramen li:nth-of-type(5n){
+  grid-area: 2 / 2;
+}
+ul.ramen li:nth-of-type(6n){
+  grid-area: 2 / 3;
+}
+ul.ramen li:nth-of-type(7n){
+  grid-area: 2 / 4;
+}
+
+
+.raam1 img{
+  width: 4.3vw;
+}
+
+.raam2 img{
+  width: 2.7vw;
+}
+
+.raam3 img{
+  width: 3.1vw;
+}
+
+.raam4 img{
+  width: 3.5vw;
+}
+
+.raam5 img{
+  width: 3vw;
+}
+
+.raam6 img{
+  width: 3vw;
+}
+
+.raam7 img{
+  width: 4.1vw;
+}
+
+/*
 .raam1 img{
   width: 4.2vw;
   position: absolute;
@@ -109,9 +184,6 @@ ul{
 }
 
 .raam3 img{
-  background: none;
-  border: none;
-
   width: 3vw;
   position: absolute;
   top: 33em;
@@ -119,9 +191,6 @@ ul{
 }
 
 .raam4 img{
-  background: none;
-  border: none;
-
   width: 3.6vw;
   position: absolute;
   top: 37.8em;
@@ -129,9 +198,6 @@ ul{
 }
 
 .raam5 img{
-  background: none;
-  border: none;
-
   width: 3vw;
   position: absolute;
   top: 38.8em;
@@ -139,9 +205,6 @@ ul{
 }
 
 .raam6 img{
-  background: none;
-  border: none;
-
   width: 4vw;
   position: absolute;
   top: 39em;
@@ -149,14 +212,11 @@ ul{
 }
 
 .raam7 img{
-  background: none;
-  border: none;
-
   width: 2.8vw;
   position: absolute;
   top: 39.2em;
   left: 56em;
-}
+}*/
 
 
 
