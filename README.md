@@ -49,10 +49,8 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Tot nu toe heb ik niet echt ervaring met JavaScript. Ik wil hier beter in worden en het beter begrijpen.
+  - Tijdens Webtypografie heb ik gewerkt met keyframes om animaties te maken in CSS. Dat was de eerste keer dat ik daarmee werkte. Ik wil tijdens deze opdracht keyframes gebruiken voor mijn animaties om diet beter onder de knie te krijgen.
  
 </details>
 
@@ -180,5 +178,27 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 1. bron 1
 2. bron 2
 3. ...
+
+Afbeeldingen:
+1. https://gigiburris.com/pages/disney-x-gigi-burris
+2. https://mungfali.com/post/710B2DA213141EC52BB21FF59CD0A7AC61A51662
+3. https://mungfali.com/post/1B904B912A8F181CCBD253BFC73D2AC7E919B85E
+4. https://mungfali.com/post/B35D3926E22F68658E2E5A1C4E36B6282D1813AF
+5. https://mungfali.com/post/A946AD8AF9BD8D2C6484DDE528EC92CDF0CD8045
+6. https://mungfali.com/post/835522B57332ED87E50B40BC03FA41C889B11BBD
+7. https://mungfali.com/post/5779C735C6AA2516D5035ADDFD695968A5236DFE
+8. https://en.wikipedia.org/wiki/Mickey_Mouse_Clubhouse
+
+Font:
+1. https://www.dafont.com/wicked-mouse.font?text=Minnie+mouse
+
+Code:
+1. https://animista.net/play/entrances/swing-in
+2. https://codepen.io/khomyakdi/pen/eoqQwx
+
+Externe link en inspiratie:
+1. https://www.youtube.com/watch?v=3BZ05HSm8_Y
+2. https://disney.fandom.com/wiki/Minnie_Mouse_Through_the_Years
+3. https://www.youtube.com/watch?v=pY7hFRg2jvw&t=124s
 
 </details>
