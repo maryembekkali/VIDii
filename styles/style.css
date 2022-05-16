@@ -90,31 +90,28 @@ ul{
 }
 
 ul.ramen {
+  position: absolute;
+  top: 26.2em;
+  left: 32.9em;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
   place-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   align-items: center;
-
-  width: 25vw;
-  height: 0vw;
-  /*margin-top: -10em;*/
-  margin: auto;
-
-}
-
-ul .ramen li{
-/*  padding: 0;
-  margin: 0;*/
-  width: 0vw;
 }
 
 .raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
   background: none;
   border: none;
+}
+
+ul.ramen li{
+  margin: -.5em;
 }
 
 ul.ramen li:nth-of-type(1n){
@@ -141,31 +138,36 @@ ul.ramen li:nth-of-type(7n){
 
 
 .raam1 img{
-  width: 4.3vw;
+  width: 4.2vw;
 }
 
 .raam2 img{
-  width: 2.7vw;
+  width: 2.6vw;
 }
 
 .raam3 img{
-  width: 3.1vw;
+  width: 3vw;
 }
 
 .raam4 img{
-  width: 3.5vw;
+  width: 3.4vw;
+  padding-bottom: 0.5em;
+  /*padding-top: -.9em;*/
 }
 
 .raam5 img{
-  width: 3vw;
+  width: 2.9vw;
+  padding-top: .7em;
 }
 
 .raam6 img{
-  width: 3vw;
+  width: 2.9vw;
+  padding-top: 1em;
 }
 
 .raam7 img{
-  width: 4.1vw;
+  width: 4vw;
+  padding-top: .6em;
 }
 
 /*
@@ -526,9 +528,16 @@ img.deur.deDeurIsOpenGegaan{
 /*********************/
 /*REGENBOOG ANIMATION*/
 /*********************/
+ul.rainbow {
+  position: fixed;
+  left: -5.4em;
+  top: 9em;
+  z-index: -1;
+}
+
  .rainbow {
-  width: 60vw;
-  height: 20vw;
+  width: 65vw;
+  height: 25vw;
   min-width: 150px;
   min-height: 75px;
   overflow: hidden;
@@ -539,7 +548,7 @@ img.deur.deDeurIsOpenGegaan{
   top: 0;
   left: 0;
   right: 0;
-  height: 60vw;
+  height: 65vw;
   min-height: 150px;
   box-sizing: content-box;
 }
@@ -560,14 +569,14 @@ li.bowRed.tekenRood{
 }
 .rainbow .bowRed:before {
   position: absolute;
-  top: -10em;
+ /* top: -10em;
   right: -10em;
   bottom: -10em;
-  left: -10em;
-/*  top: 0px;
+  left: -10em;*/
+  top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;*/
+  left: 0px;
   border-bottom-color: #FC6687;
   border-left-color: #FC6687;
 }
@@ -643,6 +652,7 @@ li.bowPurple.tekenPaars{
   animation-iteration-count:1;
   animation-fill-mode: forwards;
 }
+
 .rainbow .bowPurple:before {
   top: 50px;
   right: 50px;

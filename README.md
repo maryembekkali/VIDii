@@ -43,6 +43,7 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
   ### De eerste versie/schets:
   <img src="readme-images/schetsen.png" width="500px" alt="eerste versie/schets">
+  <img src="readme-images/concept.png" width="500px" alt="tweede versie/schets">
 
 
   ### Je ambitie: 

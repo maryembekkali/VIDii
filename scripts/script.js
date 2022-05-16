@@ -161,12 +161,6 @@ handButton.addEventListener("click", tekenDeRegenboog);
 
 function tekenDeRegenboog() {
 	deBowRed.classList.toggle("tekenRood");
-		if (boogStaatAan == true){
-			boogStaatAan = false;
-		}
-		else {
-			boogStaatAan = true;
-		}
 	deBowOrange.classList.toggle("tekenOranje");
 	deBowYellow.classList.toggle("tekenGeel");
 	deBowGreen.classList.toggle("tekenGroen");
