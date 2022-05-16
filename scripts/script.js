@@ -137,3 +137,42 @@ function minnie7komt() {
 	deMinnie7Img.classList.toggle("minnie7isgekomen")
 	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
 }
+
+
+
+
+
+////////////
+// REGENBOOG
+////////////
+var handButton = document.querySelector(".hand");
+
+var deHandImg = document.querySelector(".hand img");
+var deBowRed = document.querySelector(".bowRed");
+var deBowOrange = document.querySelector(".bowOrange");
+var deBowYellow = document.querySelector(".bowYellow");
+var deBowGreen = document.querySelector(".bowGreen");
+var deBowBlue = document.querySelector(".bowBlue");
+var deBowPurple = document.querySelector(".bowPurple");
+
+var boogStaatAan = true;
+
+handButton.addEventListener("click", tekenDeRegenboog);
+
+function tekenDeRegenboog() {
+	deBowRed.classList.toggle("tekenRood");
+		if (boogStaatAan == true){
+			boogStaatAan = false;
+		}
+		else {
+			boogStaatAan = true;
+		}
+	deBowOrange.classList.toggle("tekenOranje");
+	deBowYellow.classList.toggle("tekenGeel");
+	deBowGreen.classList.toggle("tekenGroen");
+	deBowBlue.classList.toggle("tekenBlauw");
+	deBowPurple.classList.toggle("tekenPaars");
+}
+
+
+

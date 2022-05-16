@@ -60,11 +60,13 @@ header{
 
 
 .hand{
+  width: 15vw;
   position: absolute;
-  top: 22.5em;
-  left: 20em;
-  width: 12vw;
-  z-index: -1;
+  top: 12em;
+  left: 9.5em;
+
+  background: none;
+  border: none;
 }
 
 .background{
@@ -83,22 +85,24 @@ header{
 /**********/
 /*DE RAMEN*/
 /**********/
+ul{
+  list-style: none;
+}
 
-.raam1 img{
+.raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
   background: none;
   border: none;
+}
 
-  width: 4.5em;
+.raam1 img{
+  width: 4.2vw;
   position: absolute;
   top: 32.3em;
   left: 46.5em;
 }
 
 .raam2 img{
-  background: none;
-  border: none;
-
-  width: 2.8em;
+  width: 2.6vw;
   position: absolute;
   top: 33.2em;
   left: 51.7em;
@@ -108,7 +112,7 @@ header{
   background: none;
   border: none;
 
-  width: 3.2em;
+  width: 3vw;
   position: absolute;
   top: 33em;
   left: 55.9em;
@@ -118,7 +122,7 @@ header{
   background: none;
   border: none;
 
-  width: 3.8em;
+  width: 3.6vw;
   position: absolute;
   top: 37.8em;
   left: 43.2em;
@@ -128,7 +132,7 @@ header{
   background: none;
   border: none;
 
-  width: 3.1em;
+  width: 3vw;
   position: absolute;
   top: 38.8em;
   left: 47.8em;
@@ -138,7 +142,7 @@ header{
   background: none;
   border: none;
 
-  width: 4.2em;
+  width: 4vw;
   position: absolute;
   top: 39em;
   left: 51.5em;
@@ -148,7 +152,7 @@ header{
   background: none;
   border: none;
 
-  width: 3em;
+  width: 2.8vw;
   position: absolute;
   top: 39.2em;
   left: 56em;
@@ -428,7 +432,7 @@ img.minnie7.minnie7isgekomen {
 /***************/
 
 .deur {
-  width: 5.2em;
+  width: 5.7vw;
   position: absolute;
   top: 30.1em;
   left: 55.2em;
@@ -462,3 +466,139 @@ img.deur.deDeurIsOpenGegaan{
 /*********************/
 /*REGENBOOG ANIMATION*/
 /*********************/
+ .rainbow {
+  width: 60vw;
+  height: 20vw;
+  min-width: 150px;
+  min-height: 75px;
+  overflow: hidden;
+  position: relative;
+}
+ .rainbow li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vw;
+  min-height: 150px;
+  box-sizing: content-box;
+}
+ .rainbow li:before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+}
+
+li.bowRed.tekenRood{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowRed:before {
+  position: absolute;
+  top: -10em;
+  right: -10em;
+  bottom: -10em;
+  left: -10em;
+/*  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;*/
+  border-bottom-color: #FC6687;
+  border-left-color: #FC6687;
+}
+
+li.bowOrange.tekenOranje{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowOrange:before {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border-bottom-color: #FFC764;
+  border-left-color: #FFC764;
+}
+
+li.bowYellow.tekenGeel{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowYellow:before {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border-bottom-color: #FDFF42;
+  border-left-color: #FDFF42;
+}
+
+li.bowGreen.tekenGroen{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowGreen:before {
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border-bottom-color: #3FFDA6;
+  border-left-color: #3FFDA6;
+}
+
+li.bowBlue.tekenBlauw{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowBlue:before {
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  border-bottom-color: #54DBFD;
+  border-left-color: #54DBFD;
+}
+
+li.bowPurple.tekenPaars{
+  animation-name: bow;
+  animation-duration: 2.5s;
+  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+.rainbow .bowPurple:before {
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  border-bottom-color: #D07AF4;
+  border-left-color: #D07AF4;
+  
+}
+
+@keyframes bow {
+  0% {
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(180deg);
+  }
+}
