@@ -1,8 +1,3 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
 @font-face {
     font-family: 'wicked_mouseregular';
     src: url('../font/wicked_mouse_demo-webfont.woff2') format('woff2'),
@@ -12,14 +7,26 @@
 
 }
 
+*, *::after, *::before {
+  box-sizing:border-box;  
+  cursor: url(https://cur.cursors-4u.net/toons/too-8/too739.cur), auto !important;
+}
+
 html, body {
   height:100%;
   margin:0;
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+  /*cursor:pointer;*/
+  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto !important;
 }
+
+a:not([disabled]) {
+  /*cursor:pointer;*/
+  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto !important;
+}
+
 
 /* jouw CSS vanaf hier */
 
@@ -58,7 +65,6 @@ header{
   margin-top: 6.2em;
 }
 
-
 .hand{
   width: 15vw;
   position: absolute;
@@ -79,8 +85,45 @@ header{
   z-index: -1;
 }
 
+.linkknop{
+  width: 10vw;
+  position: absolute;
+  top: 25em;
+  right: 9.5em;
 
+  background: none;
+  border: none;
 
+  animation-name: openneer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  filter: 
+    drop-shadow(0 9em 1em #24442A);
+}
+
+.linkknop img {
+  width: 100%;
+}
+
+@keyframes openneer{
+   0% {
+    transform: translateY(0);
+  } 
+  25% {
+    transform: translateY(-2em);
+  }
+  50% {
+    transform: translateY(0em);
+  }
+  75% {
+    transform: translateY(-2em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
 
 /**********/
 /*DE RAMEN*/
@@ -170,62 +213,11 @@ ul.ramen li:nth-of-type(7n){
   padding-top: .6em;
 }
 
-/*
-.raam1 img{
-  width: 4.2vw;
-  position: absolute;
-  top: 32.3em;
-  left: 46.5em;
-}
-
-.raam2 img{
-  width: 2.6vw;
-  position: absolute;
-  top: 33.2em;
-  left: 51.7em;
-}
-
-.raam3 img{
-  width: 3vw;
-  position: absolute;
-  top: 33em;
-  left: 55.9em;
-}
-
-.raam4 img{
-  width: 3.6vw;
-  position: absolute;
-  top: 37.8em;
-  left: 43.2em;
-}
-
-.raam5 img{
-  width: 3vw;
-  position: absolute;
-  top: 38.8em;
-  left: 47.8em;
-}
-
-.raam6 img{
-  width: 4vw;
-  position: absolute;
-  top: 39em;
-  left: 51.5em;
-}
-
-.raam7 img{
-  width: 2.8vw;
-  position: absolute;
-  top: 39.2em;
-  left: 56em;
-}*/
-
-
 
 
 
 /*****************/
-/*LOGO VERANDEREN*/
+/*LOGO HUIS EN LINK VERANDEREN*/
 /*****************/
 .logo img.ikHebHetLogoVeranderd {
   content: url("../images/minnielogo.png");
@@ -235,6 +227,9 @@ img.clubhouse.ikHebHetHuisVeranderd {
   content: url("../images/clubhouseroze.png");
 }
 
+.linkknop.ikHebDeLinkVeranderd {
+  content: url("../images/linkknoproze.png");
+}
 
 
 
@@ -616,7 +611,7 @@ li.bowGreen.tekenGroen{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
-  animation-delay: .2s;
+  animation-delay: .3s;
 }
 .rainbow .bowGreen:before {
   top: 30px;
@@ -633,7 +628,7 @@ li.bowBlue.tekenBlauw{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
-  animation-delay: .3s;
+  animation-delay: .4s;
 }
 .rainbow .bowBlue:before {
   top: 40px;
@@ -650,7 +645,7 @@ li.bowPurple.tekenPaars{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
-  animation-delay: .4s;
+  animation-delay: .5s;
 }
 
 .rainbow .bowPurple:before {
@@ -741,16 +736,76 @@ button.logo:active{
   transform: scale(1.07);
 }
 
+/*DE EXTERNE LINK*/
+a.linkknop:hover{
+  filter:
+    drop-shadow(0em 0em .25em yellow)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange)
+
+    drop-shadow(0 9em 1em #24442A);
+}
+
+a.linkknop:focus-visable{
+  outline:none;
+  filter:
+    drop-shadow(0em 0em .25em #062400)
+    drop-shadow(0em 0em .5em #17620B)
+    drop-shadow(0em 0em 1em #46AF35);
+}
+
+a.linkknop:active{
+  transform: scale(1.05);
+}
 
 
 
-/*transitie*/
 
-div.linkerkant{
+
+/***********************/
+/*BEGINSCHERM TRANSITIE*/
+/***********************/
+/*.linkerkant{
   background-color: purple;
   z-index: 5;
-  width: 200%;
 }
+
+.rechterkant{
+  background-color: blue;
+  z-index: 5;
+}
+
+.beginscherm {
+  margin:0;
+  padding:0;
+  list-style:none;
+  
+  display:flex;
+
+}
+
+.linkerkant, .rechterkant {
+  display:grid;
+  place-items:center;
+  flex-grow:1;
+  
+  flex-basis:0%;
+  transition:1s;
+}*/
+
+
+
+
+
+/****************/
+/*RESPONSIVENESS*/
+/****************/
+
+@media only screen and (max-width: 1440px) {
+  .logo {width: 20vw;}
+  .linkknop {width: 10vw;}
+}
+
 
 
 

@@ -192,4 +192,7 @@ Externe link en inspiratie:
 2. https://disney.fandom.com/wiki/Minnie_Mouse_Through_the_Years
 3. https://www.youtube.com/watch?v=pY7hFRg2jvw&t=124s
 
+Cursor:
+1. https://www.cursors-4u.com/cursor/2009/01/31/disney-minnie-mouse-3.html
+2. https://www.cursors-4u.com/cursor/2009/04/29/one-spark-pink-bow-tie-ribbon.html
 </details>

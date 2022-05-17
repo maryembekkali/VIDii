@@ -5,6 +5,7 @@ var deButton = document.querySelector(".logo");
 
 var deButtonImg = document.querySelector(".logo img");
 var hetHuisImg = document.querySelector(".clubhouse");
+var deLinkImg = document.querySelector(".linkknop");
 
 
 deButton.addEventListener("click", ikHebVeranderd);
@@ -12,6 +13,7 @@ deButton.addEventListener("click", ikHebVeranderd);
 function ikHebVeranderd() {
 	deButtonImg.classList.toggle("ikHebHetLogoVeranderd");
 	hetHuisImg.classList.toggle("ikHebHetHuisVeranderd");
+	deLinkImg.classList.toggle("ikHebDeLinkVeranderd");
 }
 
 
