@@ -30,9 +30,26 @@ var deDeurImg = document.querySelector(".deur");
 
 raamButton1.addEventListener("click", minnie1komt);
 
+// functie zodat alle andere minnies terug gaan in het huis als er een nieuwe minnie naar buiten komt
+function alleMinniesTerugInHetHuis() {
+	deMinnie1Img.classList.remove("minnie1isgekomen")
+	deMinnie2Img.classList.remove("minnie2isgekomen")
+	deMinnie3Img.classList.remove("minnie3isgekomen")
+	deMinnie4Img.classList.remove("minnie4isgekomen")
+	deMinnie5Img.classList.remove("minnie5isgekomen")
+	deMinnie6Img.classList.remove("minnie6isgekomen")
+	deMinnie7Img.classList.remove("minnie7isgekomen")
+}
+
 function minnie1komt() {
-	deMinnie1Img.classList.toggle("minnie1isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie1Img.classList.add("minnie1isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	// de class van de deur verwijderen zodat de deur weer open kan als je op een andere raam klikt
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -48,8 +65,13 @@ var deMinnie2Img = document.querySelector(".minnie2");
 raamButton2.addEventListener("click", minnie2komt);
 
 function minnie2komt() {
-	deMinnie2Img.classList.toggle("minnie2isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie2Img.classList.add("minnie2isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -65,8 +87,13 @@ var deMinnie3Img = document.querySelector(".minnie3");
 raamButton3.addEventListener("click", minnie3komt);
 
 function minnie3komt() {
-	deMinnie3Img.classList.toggle("minnie3isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie3Img.classList.add("minnie3isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -82,8 +109,13 @@ var deMinnie4Img = document.querySelector(".minnie4");
 raamButton4.addEventListener("click", minnie4komt);
 
 function minnie4komt() {
-	deMinnie4Img.classList.toggle("minnie4isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie4Img.classList.add("minnie4isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -99,8 +131,13 @@ var deMinnie5Img = document.querySelector(".minnie5");
 raamButton5.addEventListener("click", minnie5komt);
 
 function minnie5komt() {
-	deMinnie5Img.classList.toggle("minnie5isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie5Img.classList.add("minnie5isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -116,8 +153,13 @@ var deMinnie6Img = document.querySelector(".minnie6");
 raamButton6.addEventListener("click", minnie6komt);
 
 function minnie6komt() {
-	deMinnie6Img.classList.toggle("minnie6isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie6Img.classList.add("minnie6isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -134,8 +176,13 @@ raamButton7.addEventListener("click", minnie7komt);
 
 
 function minnie7komt() {
-	deMinnie7Img.classList.toggle("minnie7isgekomen")
-	deDeurImg.classList.toggle("deDeurIsOpenGegaan")
+	alleMinniesTerugInHetHuis()
+	deMinnie7Img.classList.add("minnie7isgekomen")
+	deDeurImg.classList.add("deDeurIsOpenGegaan")
+
+	deDeurImg.addEventListener("animationend", () =>{
+		deDeurImg.classList.remove("deDeurIsOpenGegaan")
+	})
 }
 
 
@@ -159,6 +206,7 @@ var boogStaatAan = true;
 
 handButton.addEventListener("click", tekenDeRegenboog);
 
+
 function tekenDeRegenboog() {
 	deBowRed.classList.toggle("tekenRood");
 	deBowOrange.classList.toggle("tekenOranje");
@@ -167,6 +215,3 @@ function tekenDeRegenboog() {
 	deBowBlue.classList.toggle("tekenBlauw");
 	deBowPurple.classList.toggle("tekenPaars");
 }
-
-
-

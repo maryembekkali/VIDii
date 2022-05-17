@@ -568,11 +568,6 @@ li.bowRed.tekenRood{
   animation-fill-mode: forwards;
 }
 .rainbow .bowRed:before {
-  position: absolute;
- /* top: -10em;
-  right: -10em;
-  bottom: -10em;
-  left: -10em;*/
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -692,7 +687,7 @@ li button:hover{
     drop-shadow(0em 0em 1em gold);
 }
 
-li button:focus{
+li button:focus-visable{
   outline:none;
   filter:
     drop-shadow(0em 0em .25em #63030D)
@@ -712,12 +707,12 @@ button.hand:hover{
     drop-shadow(0em 0em 1em orange);
 }
 
-button.hand:focus{
+button.hand:focus-visable{
   outline:none;
   filter:
     drop-shadow(0em 0em .25em #062400)
-    drop-shadow(0em 0em .5em #178A04)
-    drop-shadow(0em 0em 1em #82C976);
+    drop-shadow(0em 0em .5em #17620B)
+    drop-shadow(0em 0em 1em #46AF35);
 }
 
 button.hand:active{
@@ -734,7 +729,7 @@ button.logo:hover{
     drop-shadow(0em 0em 1em orange); 
 }
 
-button.logo:focus{
+button.logo:focus-visable{
   outline:none;
   filter:
     drop-shadow(0em 0em .25em #046887)
@@ -745,3 +740,19 @@ button.logo:focus{
 button.logo:active{
   transform: scale(1.07);
 }
+
+
+
+
+/*transitie*/
+
+div.linkerkant{
+  background-color: purple;
+  z-index: 5;
+  width: 200%;
+}
+
+
+
+
+
