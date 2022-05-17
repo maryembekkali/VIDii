@@ -184,7 +184,7 @@ Font:
 1. https://www.dafont.com/wicked-mouse.font?text=Minnie+mouse
 
 Code:
-1. https://animista.net/play/entrances/swing-in
+<!-- 1. https://animista.net/play/entrances/swing-in -->
 2. https://codepen.io/khomyakdi/pen/eoqQwx
 
 Externe link en inspiratie:
