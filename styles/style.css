@@ -587,6 +587,7 @@ li.bowOrange.tekenOranje{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
+  animation-delay: .1s;
 }
 .rainbow .bowOrange:before {
   top: 10px;
@@ -603,6 +604,7 @@ li.bowYellow.tekenGeel{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
+  animation-delay: .2s;
 }
 .rainbow .bowYellow:before {
   top: 20px;
@@ -619,6 +621,7 @@ li.bowGreen.tekenGroen{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
+  animation-delay: .2s;
 }
 .rainbow .bowGreen:before {
   top: 30px;
@@ -635,6 +638,7 @@ li.bowBlue.tekenBlauw{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
+  animation-delay: .3s;
 }
 .rainbow .bowBlue:before {
   top: 40px;
@@ -651,6 +655,7 @@ li.bowPurple.tekenPaars{
   transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
   animation-iteration-count:1;
   animation-fill-mode: forwards;
+  animation-delay: .4s;
 }
 
 .rainbow .bowPurple:before {
@@ -671,4 +676,72 @@ li.bowPurple.tekenPaars{
   100%{
     transform: rotate(180deg);
   }
+}
+
+
+
+
+/******************/
+/*DE BUTTON STATES*/
+/******************/
+/*DE RAMEN*/
+li button:hover{
+  filter:
+    drop-shadow(0em 0em .25em yellow)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em gold);
+}
+
+li button:focus{
+  outline:none;
+  filter:
+    drop-shadow(0em 0em .25em #63030D)
+    drop-shadow(0em 0em .5em #9F0B1A)
+    drop-shadow(0em 0em 1em #FF2E43);
+}
+
+li button:active{
+  transform: scale(1.07);
+}
+
+/*HET HANDJE*/
+button.hand:hover{
+  filter:
+    drop-shadow(0em 0em .25em gold)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange);
+}
+
+button.hand:focus{
+  outline:none;
+  filter:
+    drop-shadow(0em 0em .25em #062400)
+    drop-shadow(0em 0em .5em #178A04)
+    drop-shadow(0em 0em 1em #82C976);
+}
+
+button.hand:active{
+  transform: scale(1.05);
+  top: 11.1em;
+  left: 9em;
+}
+
+/*DE LOGO*/
+button.logo:hover{
+   filter:
+    drop-shadow(0em 0em .25em gold)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange); 
+}
+
+button.logo:focus{
+  outline:none;
+  filter:
+    drop-shadow(0em 0em .25em #046887)
+    drop-shadow(0em 0em .5em #09A9DA)
+    drop-shadow(0em 0em 1em #00C3FF);
+}
+
+button.logo:active{
+  transform: scale(1.07);
 }
