@@ -42,11 +42,13 @@ header{
 }
 
 .logo {
-  width: 20em;
+  /*width: 20em;*/
 
   position: fixed;
-  top: 2em;
-  right: 2em;
+  /*top: 2em;
+  right: 2em;*/
+  top: 2vw;
+  right: 2vw;
   font-size: 1em;
 
   background: none;
@@ -54,7 +56,8 @@ header{
 }
 
 .logo img {
-  width: 100%;
+  /*width: 100%;*/
+  width: 20vw;
 }
 
 .clubhouse {
@@ -62,14 +65,17 @@ header{
   margin-left: auto;
   margin-right: auto;
   width: 45vw;
-  margin-top: 6.2em;
+  /*margin-top: 6.2em;*/
+  margin-top: 6.2vw;
 }
 
 .hand{
   width: 15vw;
   position: absolute;
-  top: 12em;
-  left: 9.5em;
+/*  top: 12em;
+  left: 9.5em;*/
+  top: 11vw;
+  left: 8.5vw;
 
   background: none;
   border: none;
@@ -88,8 +94,10 @@ header{
 .linkknop{
   width: 10vw;
   position: absolute;
-  top: 25em;
-  right: 9.5em;
+/*  top: 25em;
+  right: 9.5em;*/
+  top: 25vw;
+  right: 9.5vw;
 
   background: none;
   border: none;
@@ -100,7 +108,8 @@ header{
   animation-timing-function: ease-in-out;
 
   filter: 
-    drop-shadow(0 9em 1em #24442A);
+    /*drop-shadow(0 9em 1em #24442A);*/
+    drop-shadow(0vw 9vw 1vw #24442A);
 }
 
 .linkknop img {
@@ -134,8 +143,12 @@ ul{
 
 ul.ramen {
   position: absolute;
-  top: 26.2em;
+/*  top: 26.2em;
+  left: 32.9em;*/
+  top: 25.5em;
   left: 32.9em;
+/*  top: 27.2vw;
+  left: 33.9vw;*/
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -491,8 +504,10 @@ img.minnie7.minnie7isgekomen {
 .deur {
   width: 5.7vw;
   position: absolute;
-  top: 30.1em;
-  left: 55.2em;
+  /*top: 30.1em;
+  left: 55.2em;*/
+  top: 32.7vw;
+  left: 61.3vw;
 }
 
 img.deur.deDeurIsOpenGegaan{
@@ -743,7 +758,8 @@ a.linkknop:hover{
     drop-shadow(0em 0em .5em gold)
     drop-shadow(0em 0em 1em orange)
 
-    drop-shadow(0 9em 1em #24442A);
+    /*drop-shadow(0 9em 1em #24442A);*/
+    drop-shadow(0vw 9vw 1vw #24442A);
 }
 
 a.linkknop:focus-visable{
@@ -802,10 +818,19 @@ a.linkknop:active{
 /****************/
 
 @media only screen and (max-width: 1440px) {
-  .logo {width: 20vw;}
-  .linkknop {width: 10vw;}
+  /*.logo {width: 20vw;}*/
+  /*.linkknop {width: 10vw;}*/
 }
 
+@media only screen and (max-width: 1200px) {
+  /*.logo {width: 10vw;}*/
+/*  .linkknop {
+    width: 10vw;
+    position: absolute;
+    top: 15em;
+    right: 9.5vw;
+  }*/
+}
 
 
 
