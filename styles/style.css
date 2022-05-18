@@ -129,19 +129,18 @@ ul{
 }
 
 ul.ramen {
-  position: absolute;
-  top: 26.3em;
-  left: 32.9em;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
-  place-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  position:relative;
+  top: -21.5vw;
+  left: 36.5vw;
+  width:19vw;
+  display:grid;
+  place-items: center; /*zodat alle ramen op dezelfde hoogte komen*/
+/*  align-content: center;
+  justify-content: center;*/
 }
 
 .raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
@@ -236,8 +235,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 5.2vw;
 
   position: absolute;
-  top: 30.6em;
-  left: 55.5em;
+  top: 34.5vw;
+  left: 62vw;
   
   opacity: 0;
 }
@@ -246,8 +245,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.6vw;
 
   position: absolute;
-  top: 30.5em;
-  left: 56em;
+  top: 34vw;
+  left: 62vw;
 
   opacity: 0;
 }
@@ -256,8 +255,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.8vw;
 
   position: absolute;
-  top: 30.3em;
-  left: 55.9em;
+  top: 33.5vw;
+  left: 62vw;
 
   opacity: 0;
 }
@@ -266,8 +265,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.3vw;
 
   position: absolute;
-  top: 30.3em;
-  left: 56.2em;
+  top: 33.5vw;
+  left: 62vw;
 
   opacity: 0;
 }
@@ -276,8 +275,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.6vw;
 
   position: absolute;
-  top: 30.4em;
-  left: 56em;
+  top: 34vw;
+  left: 62vw;
 
   opacity: 0;
 }
@@ -286,8 +285,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.4vw;
 
   position: absolute;
-  top: 30.6em;
-  left: 55.9em;
+  top: 34vw;
+  left: 62vw;
 
   opacity: 0;
 }
@@ -296,8 +295,8 @@ img.clubhouse.ikHebHetHuisVeranderd {
   width: 4.2vw;
 
   position: absolute;
-  top: 30.6em;
-  left: 56.3em;
+  top: 34vw;
+  left: 62.3vw;
 
   opacity: 0;
 }
@@ -673,7 +672,7 @@ li.bowPurple.tekenPaars{
 ul.rainbow {
   /* om de li's binnen de ul te houden*/
   position:relative;
-  top: -46vw;
+  top: -54vw;
   left: -8vw;
   z-index: -1;
   
@@ -796,10 +795,13 @@ button.hand:hover{
     drop-shadow(0em 0em 1em orange);
 }
 
-button.hand:focus-visable{
+button.hand:focus{
   outline:none;
+}
+
+button.hand:focus-visible{
   filter:
-    drop-shadow(0em 0em .25em #062400)
+    drop-shadow(0em 0em .25em black)
     drop-shadow(0em 0em .5em #17620B)
     drop-shadow(0em 0em 1em #46AF35);
 }
@@ -818,8 +820,11 @@ button.logo:hover{
     drop-shadow(0em 0em 1em orange); 
 }
 
-button.logo:focus-visable{
+button.logo:focus{
   outline:none;
+}
+
+button.logo:focus-visible{
   filter:
     drop-shadow(0em 0em .25em #046887)
     drop-shadow(0em 0em .5em #09A9DA)
@@ -841,12 +846,19 @@ a.linkknop:hover{
     drop-shadow(0vw 9vw 1vw #24442A);
 }
 
-a.linkknop:focus-visable{
+a.linkknop:focus{
   outline:none;
+}
+
+a.linkknop:focus-visible{
   filter:
-    drop-shadow(0em 0em .25em #062400)
+    drop-shadow(0em 0em .25em black)
     drop-shadow(0em 0em .5em #17620B)
-    drop-shadow(0em 0em 1em #46AF35);
+    drop-shadow(0em 0em 1em #46AF35)
+
+    drop-shadow(0vw 9vw 1vw #24442A);
+
+
 }
 
 a.linkknop:active{
