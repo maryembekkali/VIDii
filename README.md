@@ -179,13 +179,15 @@ Afbeeldingen:
 6. https://mungfali.com/post/835522B57332ED87E50B40BC03FA41C889B11BBD
 7. https://mungfali.com/post/5779C735C6AA2516D5035ADDFD695968A5236DFE
 8. https://en.wikipedia.org/wiki/Mickey_Mouse_Clubhouse
+9. ACHTERGROND
 
 Font:
 1. https://www.dafont.com/wicked-mouse.font?text=Minnie+mouse
 
 Code:
 <!-- 1. https://animista.net/play/entrances/swing-in -->
-2. https://codepen.io/khomyakdi/pen/eoqQwx
+2. https://codepen.io/shooft/pen/WNMpaVg
+
 
 Externe link en inspiratie:
 1. https://www.youtube.com/watch?v=3BZ05HSm8_Y

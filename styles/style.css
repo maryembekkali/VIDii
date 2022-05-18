@@ -25,12 +25,17 @@ a:not([disabled]) {
   cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto;
 }
 
-
-/* jouw CSS vanaf hier */
-
 h1 {
   color: #FF69B6;
   font-family: wicked_mouseregular;
+  font-size: 2.5vw;
+}
+
+p {
+  font-family: helvetica;
+  font-size: 1vw;
+  width: 30vw;
+  color: #DE519A;
 }
 
 header{
@@ -95,8 +100,8 @@ header{
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 
-  filter: 
-    drop-shadow(0vw 9vw 1vw #24442A);
+/*  filter: 
+    drop-shadow(0vw 9vw 1vw #24442A);*/
 }
 
 .linkknop img {
@@ -120,6 +125,10 @@ header{
     transform: translateY(0em);
   }
 }
+
+
+
+
 
 /**********/
 /*DE RAMEN*/
@@ -174,7 +183,6 @@ ul.ramen li:nth-of-type(7n){
   grid-area: 2 / 4;
 }
 
-
 .raam1 img{
   width: 4.2vw;
 }
@@ -210,6 +218,7 @@ ul.ramen li:nth-of-type(7n){
 
 
 
+
 /*****************/
 /*LOGO HUIS EN LINK VERANDEREN*/
 /*****************/
@@ -224,6 +233,7 @@ img.clubhouse.ikHebHetHuisVeranderd {
 .linkknop.ikHebDeLinkVeranderd {
   content: url("../images/linkknoproze.png");
 }
+
 
 
 
@@ -478,10 +488,10 @@ img.minnie7.minnie7isgekomen {
 
 
 
+
 /***************/
 /*DEUR ANIMATIE*/
 /***************/
-
 .deur {
   width: 5.7vw;
   position: absolute;
@@ -514,170 +524,18 @@ img.deur.deDeurIsOpenGegaan{
 
 
 
-/*********************/
-/*REGENBOOG ANIMATION*/
-/*********************/
-/*ul.rainbow {
-  position: fixed;
-  left: -5.4em;
-  top: 9em;
-  z-index: -1;
-}
-
- .rainbow {
-  width: 65vw;
-  height: 25vw;
-  min-width: 150px;
-  min-height: 75px;
-  overflow: hidden;
-  position: relative;
-}
- .rainbow li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 65vw;
-  min-height: 150px;
-  box-sizing: content-box;
-}
- .rainbow li:before {
-  content: '';
-  position: absolute;
-  border: 10px solid transparent;
-  transform: rotate(-45deg);
-  border-radius: 50%;
-}
-
-li.bowRed.tekenRood{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-}
-.rainbow .bowRed:before {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  border-bottom-color: #FC6687;
-  border-left-color: #FC6687;
-}
-
-li.bowOrange.tekenOranje{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-  animation-delay: .1s;
-}
-.rainbow .bowOrange:before {
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  border-bottom-color: #FFC764;
-  border-left-color: #FFC764;
-}
-
-li.bowYellow.tekenGeel{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-.rainbow .bowYellow:before {
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  border-bottom-color: #FDFF42;
-  border-left-color: #FDFF42;
-}
-
-li.bowGreen.tekenGroen{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-  animation-delay: .3s;
-}
-.rainbow .bowGreen:before {
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  border-bottom-color: #3FFDA6;
-  border-left-color: #3FFDA6;
-}
-
-li.bowBlue.tekenBlauw{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-.rainbow .bowBlue:before {
-  top: 40px;
-  right: 40px;
-  bottom: 40px;
-  left: 40px;
-  border-bottom-color: #54DBFD;
-  border-left-color: #54DBFD;
-}
-
-li.bowPurple.tekenPaars{
-  animation-name: bow;
-  animation-duration: 2.5s;
-  transition-timing-function: cubic-bezier(.46, 0.1, 0.25, 1);
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-  animation-delay: .5s;
-}
-
-.rainbow .bowPurple:before {
-  top: 50px;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
-  border-bottom-color: #D07AF4;
-  border-left-color: #D07AF4;
-  
-}
-
-@keyframes bow {
-  0% {
-    transform: rotate(0);
-  }
-
-  100%{
-    transform: rotate(180deg);
-  }
-}*/
-
-
-
-
-
 /******************/
 /*NIEUWE REGENBOOG*/
 /******************/
 ul.rainbow {
   /* om de li's binnen de ul te houden*/
   position:relative;
-  top: -54vw;
-  left: -8vw;
+  top: -55.4vw;
+  left: -7vw;
   z-index: -1;
   
   /* de ul schaalt mee met de breedte van de browser */
-  width:70vw;
+  width:65vw;
   aspect-ratio:2/1;
   
   /* de defaul ul dingen uitzetten */
@@ -808,8 +666,8 @@ button.hand:focus-visible{
 
 button.hand:active{
   transform: scale(1.05);
-  top: 11.1em;
-  left: 9em;
+  top: 11.1vw;
+  left: 9vw;
 }
 
 /*DE LOGO*/
@@ -846,6 +704,20 @@ a.linkknop:hover{
     drop-shadow(0vw 9vw 1vw #24442A);
 }
 
+a.linkknop::after {
+  content: "";
+  position: fixed;
+  width: 10vw;
+  height: 3vw;
+
+  top: 150%;
+  left: calc(50% - 5vw);
+
+  border-radius: 50%;
+  background-image: radial-gradient(closest-side, #000, transparent);
+  filter: blur(10px);
+}
+
 a.linkknop:focus{
   outline:none;
 }
@@ -857,7 +729,6 @@ a.linkknop:focus-visible{
     drop-shadow(0em 0em 1em #46AF35)
 
     drop-shadow(0vw 9vw 1vw #24442A);
-
 
 }
 
@@ -907,23 +778,35 @@ a.linkknop:active{
 /****************/
 /*RESPONSIVENESS*/
 /****************/
-
 @media only screen and (max-width: 1440px) {
-  /*.logo {width: 20vw;}*/
-  /*.linkknop {width: 10vw;}*/
+  ul.rainbow {
+    /*width:65vw;*/
+    top: -55.4vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-  /*.logo {width: 10vw;}*/
-/*  .linkknop {
-    width: 10vw;
-    position: absolute;
-    top: 15em;
-    right: 9.5vw;
-  }*/
+  ul.rainbow {
+    width: 63vw;
+    top: -54.4vw;
+    left: -9vw;
+  }
 }
 
+@media only screen and (max-width: 1000px) {
+  ul.rainbow {
+    width: 60vw;
+    top: -53.4vw;
+    left: -11vw;
+  }
+}
 
-
+@media only screen and (max-width: 800px) {
+  ul.rainbow {
+    width: 57vw;
+    top: -52.svw;
+    left: -13vw;
+  }
+}
 
 
