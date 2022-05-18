@@ -9,22 +9,20 @@
 
 *, *::after, *::before {
   box-sizing:border-box;  
-  cursor: url(https://cur.cursors-4u.net/toons/too-8/too739.cur), auto !important;
 }
 
 html, body {
   height:100%;
   margin:0;
+  cursor: url(https://cur.cursors-4u.net/toons/too-8/too739.cur), auto;
 }
 
 button:not([disabled]) {
-  /*cursor:pointer;*/
-  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto !important;
+  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto;
 }
 
 a:not([disabled]) {
-  /*cursor:pointer;*/
-  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto !important;
+  cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto;
 }
 
 
@@ -42,11 +40,7 @@ header{
 }
 
 .logo {
-  /*width: 20em;*/
-
   position: fixed;
-  /*top: 2em;
-  right: 2em;*/
   top: 2vw;
   right: 2vw;
   font-size: 1em;
@@ -56,7 +50,6 @@ header{
 }
 
 .logo img {
-  /*width: 100%;*/
   width: 20vw;
 }
 
@@ -65,15 +58,12 @@ header{
   margin-left: auto;
   margin-right: auto;
   width: 45vw;
-  /*margin-top: 6.2em;*/
-  margin-top: 6.2vw;
+  margin-top: 7vw;
 }
 
 .hand{
   width: 15vw;
   position: absolute;
-/*  top: 12em;
-  left: 9.5em;*/
   top: 11vw;
   left: 8.5vw;
 
@@ -94,8 +84,6 @@ header{
 .linkknop{
   width: 10vw;
   position: absolute;
-/*  top: 25em;
-  right: 9.5em;*/
   top: 25vw;
   right: 9.5vw;
 
@@ -108,7 +96,6 @@ header{
   animation-timing-function: ease-in-out;
 
   filter: 
-    /*drop-shadow(0 9em 1em #24442A);*/
     drop-shadow(0vw 9vw 1vw #24442A);
 }
 
@@ -143,12 +130,8 @@ ul{
 
 ul.ramen {
   position: absolute;
-/*  top: 26.2em;
-  left: 32.9em;*/
-  top: 25.5em;
+  top: 26.3em;
   left: 32.9em;
-/*  top: 27.2vw;
-  left: 33.9vw;*/
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -208,7 +191,6 @@ ul.ramen li:nth-of-type(7n){
 .raam4 img{
   width: 3.4vw;
   padding-bottom: 0.5em;
-  /*padding-top: -.9em;*/
 }
 
 .raam5 img{
@@ -504,9 +486,7 @@ img.minnie7.minnie7isgekomen {
 .deur {
   width: 5.7vw;
   position: absolute;
-  /*top: 30.1em;
-  left: 55.2em;*/
-  top: 32.7vw;
+  top: 33.5vw;
   left: 61.3vw;
 }
 
@@ -538,7 +518,7 @@ img.deur.deDeurIsOpenGegaan{
 /*********************/
 /*REGENBOOG ANIMATION*/
 /*********************/
-ul.rainbow {
+/*ul.rainbow {
   position: fixed;
   left: -5.4em;
   top: 9em;
@@ -681,7 +661,103 @@ li.bowPurple.tekenPaars{
   100%{
     transform: rotate(180deg);
   }
+}*/
+
+
+
+
+
+/******************/
+/*NIEUWE REGENBOOG*/
+/******************/
+ul.rainbow {
+  /* om de li's binnen de ul te houden*/
+  position:relative;
+  top: -46vw;
+  left: -8vw;
+  z-index: -1;
+  
+  /* de ul schaalt mee met de breedte van de browser */
+  width:70vw;
+  aspect-ratio:2/1;
+  
+  /* de defaul ul dingen uitzetten */
+  margin:0;
+  padding:0;
+  list-style:none;
+  
+  /*  de li's staan midden onder in de ul */
+  display:grid;
+  place-items:end center; 
+  
+  /* wat uit de ul steekt is verborgen */
+  overflow:hidden;
 }
+
+/* alle bogen */
+ul.rainbow li {
+  position:absolute;
+  width:calc(100% - 2em * var(--index));
+  height:calc(100% - 1em * var(--index));
+  
+  background-image:radial-gradient(
+    farthest-side circle at center bottom,
+    transparent calc(100% - 1em - .5px),
+    var(--color) calc(100% - 1em)
+  );
+  border-radius:50% 50% 0 0 / 100% 100% 0 0;
+  
+  
+  transform-origin:center bottom;
+  transform:rotate(-.5turn);
+  transition-duration:1.5s;
+  transition-delay:calc(.1s * var(--index));
+}
+
+/* als de ul de klas hopla heeft */
+/* draaien de li's in 1s in beeld */
+/* met een vertraging die bij elke li is opgegeven */
+ul.hopla li {
+  transform:rotate(0turn);
+}
+
+
+/* rood */
+ul.rainbow li:nth-of-type(1) {
+  --index:0;
+  --color:#FC6687;
+}
+
+/* oranje */
+ul.rainbow li:nth-of-type(2) {
+  --index:1;
+  --color:#FFC764;
+}
+
+/* geel */
+ul.rainbow li:nth-of-type(3) {
+  --index:2;
+  --color:#FDFF42;
+}
+
+/* groen */
+ul.rainbow li:nth-of-type(4) {
+  --index:3;
+  --color:#3FFDA6;
+}
+
+/* blauw */
+ul.rainbow li:nth-of-type(5) {
+  --index:4;
+  --color:#54DBFD;
+}
+
+/* paars */
+ul.rainbow li:nth-of-type(6) {
+  --index:5;
+  --color:#D07AF4;
+}
+
 
 
 
@@ -697,8 +773,11 @@ li button:hover{
     drop-shadow(0em 0em 1em gold);
 }
 
-li button:focus-visable{
+li button:focus{
   outline:none;
+}
+
+li button:focus-visible{
   filter:
     drop-shadow(0em 0em .25em #63030D)
     drop-shadow(0em 0em .5em #9F0B1A)
