@@ -16,8 +16,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Maryem Bekkali
 
 #### Je startniveau:
-Mijn startniveau is: Blauw/Rood --> Paars 🤷🏽‍♀️
-Dit is niet de eerste keer voor mij dat ik ga coderen, maar veel is wel weg gezakt omdat ik het niet vaak doe. Begrijpen gaat vaak wel, maar om zelf te bedenken hoe ik iets moet doen vind ik nog lastig.
+Mijn startniveau is: Blauw/Rood misschien Paars 🤷🏽‍♀️
+Dit is niet de eerste keer voor mij dat ik ga coderen, maar er is wel veel weg gezakt omdat ik het niet vaak doe. Begrijpen gaat vaak wel, maar om zelf te bedenken hoe ik iets moet doen vind ik nog lastig.
 
 
 
@@ -64,12 +64,12 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
   ### Feedback:
   Voor de les van dinsdag 10 mei had ik mijn concept op Miro gezet. Omdat ik deze les had gemist en mijn concept nog niet duidelijk was op Miro heb ik dit eerst aangevuld voordat ik feedback ben gaan vragen. Ik heb feedback van Senna en Daphne gekregen. Eigenlijk heb ik bijna alleen maar positieve feedback gehad.
-    1. Het idee past bij het karakter.
-    2. De transities zijn goed doordacht.
-    3. Leuk idee om de ramen te gebruiken voor de verschillende versies van Minnie Mouse.
-    4. Leuke details die iets extra's toevoegen aan het concept zoals het handje met de regenboog.
+  1. Het idee past bij het karakter.
+  2. De transities zijn goed doordacht.
+  3. Leuk idee om de ramen te gebruiken voor de verschillende versies van Minnie Mouse.
+  4. Leuke details die iets extra's toevoegen aan het concept zoals het handje met de regenboog.
 
-  ### Bevinding 1:
+### Bevinding 1:
   'Je kan misschien nog kijken hoe je je beschinscherm wil introduceren.'
 
   #### oplossing:
