@@ -171,7 +171,7 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik heb een aantal dingetjes waar in nog aan wilde werken maar waar ik niet aantoe ben gekomen. Ik wilde namelijk nog een beginscherm toevoegen aan mijn interface. Ook wilde ik de schaduw van de link nog wat aanpassenzodat deze op z'n plek bleef maar iets groter werd als de link dichterbij kwam en iets kleiner als die wat meer omhoog ging. Verder werkt de schaduw in de roze versie van de link niet. Hier wilde ik ook nog naar kijken, maar had ik geen tijd meer voor.
+  Ik heb een aantal dingetjes waar in nog aan wilde werken maar waar ik niet aantoe ben gekomen. Ik wilde namelijk nog een beginscherm toevoegen aan mijn interface. Hier wilde ik ook een geluidje aan toevoegen. Ook wilde ik de schaduw van de link nog wat aanpassen zodat deze op z'n plek bleef maar iets groter werd als de link dichterbij kwam en iets kleiner als die wat meer omhoog ging. Verder werkt de schaduw in de roze versie van de link niet. Hier wilde ik ook nog naar kijken, maar had ik geen tijd meer voor.
 </details>
 
 
@@ -181,7 +181,6 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
 Afbeeldingen:
 1. https://gigiburris.com/pages/disney-x-gigi-burris
