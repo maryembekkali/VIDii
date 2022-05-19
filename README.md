@@ -149,15 +149,6 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
 
   ### Bevinding 3:
-  Je achtergrond covert nog niet het gehele scherm, waardoor er onder de pagina een witte balk is te zien
-
-  #### oplossing:
-  Op mijn beelscherm word de afbeelding wel op het hele scherm getoond. 
-
-
-
-
-  ### Bevinding 4:
   Alles schaalt mee als ik het beeld kleiner maak, ook je ramen, maar je ramen komen niet op de juiste plek
 
   #### oplossing:
@@ -220,4 +211,5 @@ Externe link en inspiratie:
 Cursor:
 1. https://www.cursors-4u.com/cursor/2009/01/31/disney-minnie-mouse-3.html
 2. https://www.cursors-4u.com/cursor/2009/04/29/one-spark-pink-bow-tie-ribbon.html
+
 </details>

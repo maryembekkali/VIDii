@@ -394,7 +394,8 @@ ul.ramen {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  place-items: center; /*zodat alle ramen op dezelfde hoogte komen*/
+  /*zodat alle ramen op dezelfde hoogte komen*/
+  place-items: center;
 }
 
 .raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
@@ -778,6 +779,7 @@ img.deur.deDeurIsOpenGegaan{
 
     width: 60vw;
   }
+
 }
 
 @media only screen and (max-width: 800px) {
