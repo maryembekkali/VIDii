@@ -25,25 +25,58 @@ a:not([disabled]) {
   cursor: url(https://cur.cursors-4u.net/others/oth-4/oth304.ani), url(https://cur.cursors-4u.net/others/oth-4/oth304.png), auto;
 }
 
-h1 {
-  color: #FF69B6;
-  font-family: wicked_mouseregular;
-  font-size: 2.5vw;
-}
-
-p {
-  font-family: helvetica;
-  font-size: 1vw;
-  width: 30vw;
-  color: #DE519A;
-}
-
 header{
   position: absolute;
   top: 2em;
   left: 2em;
 }
 
+
+
+
+
+/*********/
+/*TEKSTEN*/
+/*********/
+h1 {
+  color: #FF69B6;
+  font-family: wicked_mouseregular;
+  font-size: 2.5vw;
+  text-shadow: 0 0 .3em white, 0 0 .3em white;
+}
+
+p {
+  font-family: wicked_mouseregular;
+  font-size: 1vw;
+  width: 30vw;
+  color: #DE519A;
+  text-shadow: 0 0 .5em white, 0 0 .5em white;
+}
+
+
+
+
+
+/*************/
+/*ACHTERGROND*/
+/*************/
+.background{
+  position: absolute;
+  top: 0em;
+  left: 0em;
+
+  width: 100vw;
+
+  z-index: -1;
+}
+
+
+
+
+
+/******/
+/*LOGO*/
+/******/
 .logo {
   position: fixed;
   top: 2vw;
@@ -58,6 +91,40 @@ header{
   width: 20vw;
 }
 
+.logo img.ikHebHetLogoVeranderd {
+  content: url("../images/minnielogo.png");
+}
+
+/*LOGO BUTTON STATES*/
+button.logo:hover{
+   filter:
+    drop-shadow(0em 0em .25em gold)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange); 
+}
+
+button.logo:focus{
+  outline:none;
+}
+
+button.logo:focus-visible{
+  filter:
+    drop-shadow(0em 0em .25em #046887)
+    drop-shadow(0em 0em .5em #09A9DA)
+    drop-shadow(0em 0em 1em #00C3FF);
+}
+
+button.logo:active{
+  transform: scale(1.07);
+}
+
+
+
+
+
+/***********/
+/*CLUBHOUSE*/
+/***********/
 .clubhouse {
   display: block;
   margin-left: auto;
@@ -66,26 +133,17 @@ header{
   margin-top: 7vw;
 }
 
-.hand{
-  width: 15vw;
-  position: absolute;
-  top: 11vw;
-  left: 8.5vw;
-
-  background: none;
-  border: none;
+img.clubhouse.ikHebHetHuisVeranderd {
+  content: url("../images/clubhouseroze.png");
 }
 
-.background{
-  position: absolute;
-  top: 0em;
-  left: 0em;
 
-  width: 100vw;
 
-  z-index: -1;
-}
 
+
+/******/
+/*LINK*/
+/******/
 .linkknop{
   width: 10vw;
   position: absolute;
@@ -99,9 +157,6 @@ header{
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-
-/*  filter: 
-    drop-shadow(0vw 9vw 1vw #24442A);*/
 }
 
 .linkknop img {
@@ -126,13 +181,192 @@ header{
   }
 }
 
+.linkknop.ikHebDeLinkVeranderd {
+  content: url("../images/linkknoproze.png");
+}
+
+/*LINK BUTTON STATES*/
+a.linkknop:hover{
+  filter:
+    drop-shadow(0em 0em .25em yellow)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange);
+}
+
+a.linkknop::after {
+  content: "";
+  position: fixed;
+  width: 10vw;
+  height: 3vw;
+
+  top: 150%;
+  left: calc(50% - 5vw);
+
+  border-radius: 50%;
+  background-image: radial-gradient(closest-side, #051D00, transparent);
+  filter: blur(5px);
+}
+
+a.linkknop:focus{
+  outline:none;
+}
+
+a.linkknop:focus-visible{
+  filter:
+    drop-shadow(0em 0em .25em black)
+    drop-shadow(0em 0em .5em #17620B)
+    drop-shadow(0em 0em 1em #46AF35);
+
+}
+
+a.linkknop:active{
+  transform: scale(1.05);
+}
 
 
 
 
-/**********/
-/*DE RAMEN*/
-/**********/
+
+/***********/
+/*REGENBOOG*/
+/***********/
+ul.rainbow {
+  /* om de li's binnen de ul te houden*/
+  position:relative;
+  top: -55.4vw;
+  left: -7vw;
+  z-index: -1;
+  
+  /* de ul schaalt mee met de breedte van de browser */
+  width:65vw;
+  aspect-ratio:2/1;
+  
+  /* de defaul ul dingen uitzetten */
+  margin:0;
+  padding:0;
+  list-style:none;
+  
+  /*  de li's staan midden onder in de ul */
+  display:grid;
+  place-items:end center; 
+  
+  /* wat uit de ul steekt is verborgen */
+  overflow:hidden;
+}
+
+/* alle bogen */
+ul.rainbow li {
+  position:absolute;
+  width:calc(100% - 2em * var(--index));
+  height:calc(100% - 1em * var(--index));
+  
+  background-image:radial-gradient(
+    farthest-side circle at center bottom,
+    transparent calc(100% - 1em - .5px),
+    var(--color) calc(100% - 1em)
+  );
+  border-radius:50% 50% 0 0 / 100% 100% 0 0;
+  
+  
+  transform-origin:center bottom;
+  transform:rotate(-.5turn);
+  transition-duration:1.5s;
+  transition-delay:calc(.1s * var(--index));
+}
+
+/* als de ul de klas hopla heeft */
+/* draaien de li's in 1s in beeld */
+/* met een vertraging die bij elke li is opgegeven */
+ul.hopla li {
+  transform:rotate(0turn);
+}
+
+
+/* rood */
+ul.rainbow li:nth-of-type(1) {
+  --index:0;
+  --color:#FC6687;
+}
+
+/* oranje */
+ul.rainbow li:nth-of-type(2) {
+  --index:1;
+  --color:#FFC764;
+}
+
+/* geel */
+ul.rainbow li:nth-of-type(3) {
+  --index:2;
+  --color:#FDFF42;
+}
+
+/* groen */
+ul.rainbow li:nth-of-type(4) {
+  --index:3;
+  --color:#3FFDA6;
+}
+
+/* blauw */
+ul.rainbow li:nth-of-type(5) {
+  --index:4;
+  --color:#54DBFD;
+}
+
+/* paars */
+ul.rainbow li:nth-of-type(6) {
+  --index:5;
+  --color:#D07AF4;
+}
+
+
+
+
+
+/******/
+/*HAND*/
+/******/
+.hand{
+  width: 15vw;
+  position: absolute;
+  top: 11vw;
+  left: 8.5vw;
+
+  background: none;
+  border: none;
+}
+
+/*HAND BUTTON STATES*/
+button.hand:hover{
+  filter:
+    drop-shadow(0em 0em .25em gold)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em orange);
+}
+
+button.hand:focus{
+  outline:none;
+}
+
+button.hand:focus-visible{
+  filter:
+    drop-shadow(0em 0em .25em black)
+    drop-shadow(0em 0em .5em #17620B)
+    drop-shadow(0em 0em 1em #46AF35);
+}
+
+button.hand:active{
+  transform: scale(1.05);
+  top: 11.1vw;
+  left: 9vw;
+}
+
+
+
+
+
+/*******/
+/*RAMEN*/
+/*******/
 ul{
   list-style: none;
 }
@@ -148,8 +382,6 @@ ul.ramen {
   width:19vw;
   display:grid;
   place-items: center; /*zodat alle ramen op dezelfde hoogte komen*/
-/*  align-content: center;
-  justify-content: center;*/
 }
 
 .raam1, .raam2, .raam3, .raam4, .raam5, .raam6, .raam7{
@@ -215,23 +447,27 @@ ul.ramen li:nth-of-type(7n){
   padding-top: .6em;
 }
 
-
-
-
-
-/*****************/
-/*LOGO HUIS EN LINK VERANDEREN*/
-/*****************/
-.logo img.ikHebHetLogoVeranderd {
-  content: url("../images/minnielogo.png");
+/*RAAM BUTTON STATES*/
+li button:hover{
+  filter:
+    drop-shadow(0em 0em .25em yellow)
+    drop-shadow(0em 0em .5em gold)
+    drop-shadow(0em 0em 1em gold);
 }
 
-img.clubhouse.ikHebHetHuisVeranderd {
-  content: url("../images/clubhouseroze.png");
+li button:focus{
+  outline:none;
 }
 
-.linkknop.ikHebDeLinkVeranderd {
-  content: url("../images/linkknoproze.png");
+li button:focus-visible{
+  filter:
+    drop-shadow(0em 0em .25em #63030D)
+    drop-shadow(0em 0em .5em #9F0B1A)
+    drop-shadow(0em 0em 1em #FF2E43);
+}
+
+li button:active{
+  transform: scale(1.07);
 }
 
 
@@ -312,12 +548,7 @@ img.clubhouse.ikHebHetHuisVeranderd {
 }
 
 
-
-
-
-/****************************/
-/*MINNIES KOMEN NAAR BUIETEN*/
-/****************************/
+/*MINNIES KOMEN NAAR BUITEN*/
 img.minnie1.minnie1isgekomen {
   animation-name: minnie1KomtNaarBuiten;
   animation-duration: 2s;
@@ -489,9 +720,9 @@ img.minnie7.minnie7isgekomen {
 
 
 
-/***************/
-/*DEUR ANIMATIE*/
-/***************/
+/******/
+/*DEUR*/
+/******/
 .deur {
   width: 5.7vw;
   position: absolute;
@@ -524,263 +755,11 @@ img.deur.deDeurIsOpenGegaan{
 
 
 
-/******************/
-/*NIEUWE REGENBOOG*/
-/******************/
-ul.rainbow {
-  /* om de li's binnen de ul te houden*/
-  position:relative;
-  top: -55.4vw;
-  left: -7vw;
-  z-index: -1;
-  
-  /* de ul schaalt mee met de breedte van de browser */
-  width:65vw;
-  aspect-ratio:2/1;
-  
-  /* de defaul ul dingen uitzetten */
-  margin:0;
-  padding:0;
-  list-style:none;
-  
-  /*  de li's staan midden onder in de ul */
-  display:grid;
-  place-items:end center; 
-  
-  /* wat uit de ul steekt is verborgen */
-  overflow:hidden;
-}
-
-/* alle bogen */
-ul.rainbow li {
-  position:absolute;
-  width:calc(100% - 2em * var(--index));
-  height:calc(100% - 1em * var(--index));
-  
-  background-image:radial-gradient(
-    farthest-side circle at center bottom,
-    transparent calc(100% - 1em - .5px),
-    var(--color) calc(100% - 1em)
-  );
-  border-radius:50% 50% 0 0 / 100% 100% 0 0;
-  
-  
-  transform-origin:center bottom;
-  transform:rotate(-.5turn);
-  transition-duration:1.5s;
-  transition-delay:calc(.1s * var(--index));
-}
-
-/* als de ul de klas hopla heeft */
-/* draaien de li's in 1s in beeld */
-/* met een vertraging die bij elke li is opgegeven */
-ul.hopla li {
-  transform:rotate(0turn);
-}
-
-
-/* rood */
-ul.rainbow li:nth-of-type(1) {
-  --index:0;
-  --color:#FC6687;
-}
-
-/* oranje */
-ul.rainbow li:nth-of-type(2) {
-  --index:1;
-  --color:#FFC764;
-}
-
-/* geel */
-ul.rainbow li:nth-of-type(3) {
-  --index:2;
-  --color:#FDFF42;
-}
-
-/* groen */
-ul.rainbow li:nth-of-type(4) {
-  --index:3;
-  --color:#3FFDA6;
-}
-
-/* blauw */
-ul.rainbow li:nth-of-type(5) {
-  --index:4;
-  --color:#54DBFD;
-}
-
-/* paars */
-ul.rainbow li:nth-of-type(6) {
-  --index:5;
-  --color:#D07AF4;
-}
-
-
-
-
-
-/******************/
-/*DE BUTTON STATES*/
-/******************/
-/*DE RAMEN*/
-li button:hover{
-  filter:
-    drop-shadow(0em 0em .25em yellow)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em gold);
-}
-
-li button:focus{
-  outline:none;
-}
-
-li button:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em #63030D)
-    drop-shadow(0em 0em .5em #9F0B1A)
-    drop-shadow(0em 0em 1em #FF2E43);
-}
-
-li button:active{
-  transform: scale(1.07);
-}
-
-/*HET HANDJE*/
-button.hand:hover{
-  filter:
-    drop-shadow(0em 0em .25em gold)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange);
-}
-
-button.hand:focus{
-  outline:none;
-}
-
-button.hand:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em black)
-    drop-shadow(0em 0em .5em #17620B)
-    drop-shadow(0em 0em 1em #46AF35);
-}
-
-button.hand:active{
-  transform: scale(1.05);
-  top: 11.1vw;
-  left: 9vw;
-}
-
-/*DE LOGO*/
-button.logo:hover{
-   filter:
-    drop-shadow(0em 0em .25em gold)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange); 
-}
-
-button.logo:focus{
-  outline:none;
-}
-
-button.logo:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em #046887)
-    drop-shadow(0em 0em .5em #09A9DA)
-    drop-shadow(0em 0em 1em #00C3FF);
-}
-
-button.logo:active{
-  transform: scale(1.07);
-}
-
-/*DE EXTERNE LINK*/
-a.linkknop:hover{
-  filter:
-    drop-shadow(0em 0em .25em yellow)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange)
-
-    /*drop-shadow(0 9em 1em #24442A);*/
-    drop-shadow(0vw 9vw 1vw #24442A);
-}
-
-a.linkknop::after {
-  content: "";
-  position: fixed;
-  width: 10vw;
-  height: 3vw;
-
-  top: 150%;
-  left: calc(50% - 5vw);
-
-  border-radius: 50%;
-  background-image: radial-gradient(closest-side, #000, transparent);
-  filter: blur(10px);
-}
-
-a.linkknop:focus{
-  outline:none;
-}
-
-a.linkknop:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em black)
-    drop-shadow(0em 0em .5em #17620B)
-    drop-shadow(0em 0em 1em #46AF35)
-
-    drop-shadow(0vw 9vw 1vw #24442A);
-
-}
-
-a.linkknop:active{
-  transform: scale(1.05);
-}
-
-
-
-
-
-/***********************/
-/*BEGINSCHERM TRANSITIE*/
-/***********************/
-/*.linkerkant{
-  background-color: purple;
-  z-index: 5;
-}
-
-.rechterkant{
-  background-color: blue;
-  z-index: 5;
-}
-
-.beginscherm {
-  margin:0;
-  padding:0;
-  list-style:none;
-  
-  display:flex;
-
-}
-
-.linkerkant, .rechterkant {
-  display:grid;
-  place-items:center;
-  flex-grow:1;
-  
-  flex-basis:0%;
-  transition:1s;
-}*/
-
-
-
-
-
 /****************/
 /*RESPONSIVENESS*/
 /****************/
 @media only screen and (max-width: 1440px) {
   ul.rainbow {
-    /*width:65vw;*/
     top: -55.4vw;
   }
 }
@@ -804,9 +783,7 @@ a.linkknop:active{
 @media only screen and (max-width: 800px) {
   ul.rainbow {
     width: 57vw;
-    top: -52.svw;
+    top: -52.4vw;
     left: -13vw;
   }
 }
-
-
