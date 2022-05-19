@@ -16,7 +16,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Maryem Bekkali
 
 #### Je startniveau:
-Mijn startniveau is: Blauw/Rood misschien Paars 🤷🏽‍♀️
+Mijn startniveau is: Blauw/Rood misschien Paars 🤷🏽‍♀️.
+
 Dit is niet de eerste keer voor mij dat ik ga coderen, maar er is wel veel weg gezakt omdat ik het niet vaak doe. Begrijpen gaat vaak wel, maar om zelf te bedenken hoe ik iets moet doen vind ik nog lastig.
 
 
@@ -88,23 +89,39 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   <summary>Mijn bevindingen + wijzigingen</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Mijn interface was nog niet responsive.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik merkte dat mijn clubhuis wel responsive was en alle andere elementen niet. Ik ben in mijn code gaan kijken wat ik daar anders had gedaan. Ik zag dat ik voor de positie van het clubhuis vw gebruikte en voor de rest em. Dit heb ik voor de andere elementen dan ook aangepast. Verder heb ik voor mijn regenboog media queries gebruikt. Hier heb ik drie breakpoints voor gemaakt.
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Mijn buttons en link hadden nog geen states.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Voor de buttons en link heb ik een hover, focus en active state gemaakt. Voor de hover state heb ik gebrobeerd het glitter effect van het Minnie Mouse Clubhouse na te maken. Hiervoor heb ik een goude drop shadow gebruikt. Voor de focus state heb ik een donkere schaduw gemaakt. Door met tab op het toetsenbord te klikken komt deze te voorschijn. Als de gebruiker op eter klikt wordt de knop geactiveerd. Tenslotte heb ik voor de active state de knop iets vergroot.
+
+  <img src="readme-images/glittereffect.png" width="500px" alt="eerste versie/schets">
 
 
 
   ### Bevinding 3:
-  ...
+  Mijn css code was nog niet netjes gesorteerd.
+
+  #### oplossing:
+  Ik heb alle code die bij hetzelfde element hoort onder elkaar gezet zodat dit makkelijk te vinden is tijden het coderen en zodat het makkelijk te lezen is. Verder heb ik voldoende ruimte gelaten tussen verschillende onderdelen. Verder heb ik de css properties binnen de selector steeds in dezelfde volgorde gezet.
+
+
+
+  ### Bevinding 4:
+  De gebruikte bronnen worden niet opgenomen in mijn readme.
+
+  #### oplossing:
+  Ik heb alle gebruikte bronnen in een logisch overzicht in mijn readme opgenomen. Deze heb ik onderverdeeld in afbeeldingen, achtergrond, font, code, cursor en externe link en inspiratie.
+
+  <img src="readme-images/feedback2-1.png" width="500px" alt="eerste versie/schets">
+  <img src="readme-images/feedback2-2.png" width="500px" alt="eerste versie/schets">
 
 </details>
 
@@ -186,7 +203,6 @@ Font:
 Code:
 <!-- 1. https://animista.net/play/entrances/swing-in -->
 2. https://codepen.io/shooft/pen/WNMpaVg
-
 
 Externe link en inspiratie:
 1. https://www.youtube.com/watch?v=3BZ05HSm8_Y

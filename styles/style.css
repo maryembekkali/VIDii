@@ -751,12 +751,6 @@ img.deur.deDeurIsOpenGegaan{
 /****************/
 /*RESPONSIVENESS*/
 /****************/
-@media only screen and (max-width: 1440px) {
-  ul.rainbow {
-    top: -55.4vw;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   ul.rainbow {
     top: -54.4vw;
