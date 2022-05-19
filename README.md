@@ -120,8 +120,8 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   #### oplossing:
   Ik heb alle gebruikte bronnen in een logisch overzicht in mijn readme opgenomen. Deze heb ik onderverdeeld in afbeeldingen, achtergrond, font, code, cursor en externe link en inspiratie.
 
-  <img src="readme-images/feedback2-1.png" width="500px" alt="eerste versie/schets">
-  <img src="readme-images/feedback2-2.png" width="500px" alt="eerste versie/schets">
+  <img src="readme-images/feedback2-1.png" width="200px" alt="eerste versie/schets">
+  <img src="readme-images/feedback2-2.png" width="200px" alt="eerste versie/schets">
 
 </details>
 
