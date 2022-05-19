@@ -51,9 +51,7 @@ p.inleiding {
   font-size: 1vw;
   width: 30vw;
   color: #DE519A;
-  color: #FF69B6;
-  /*color: black;*/
-  text-shadow: 0 0 .3em black, 0 0 .3em black;
+  text-shadow: 0 0 .5em white, 0 0 .5em white, 0 0 .5em white;
 }
 
 

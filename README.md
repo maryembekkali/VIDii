@@ -118,10 +118,10 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   De gebruikte bronnen worden niet opgenomen in mijn readme.
 
   #### oplossing:
-  Ik heb alle gebruikte bronnen in een logisch overzicht in mijn readme opgenomen. Deze heb ik onderverdeeld in afbeeldingen, achtergrond, font, code, cursor en externe link en inspiratie.
+  Ik heb alle gebruikte bronnen in een logisch overzicht in mijn readme opgenomen. Deze heb ik onderverdeeld in afbeeldingen, font, code, cursor en externe link en inspiratie.
 
-  <img src="readme-images/feedback2-1.png" width="200px" alt="eerste versie/schets">
-  <img src="readme-images/feedback2-2.png" width="200px" alt="eerste versie/schets">
+  <img src="readme-images/feedback2-1.png" width="300px" alt="eerste versie/schets">
+  <img src="readme-images/feedback2-2.png" width="300px" alt="eerste versie/schets">
 
 </details>
 
@@ -162,19 +162,16 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/interfacerood.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/interfaceroze.jpg" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik begrijp JavaScript nu een stuk beter. Het lukt me om een knop te gebruiken om vervolgens iets in het scherm te laten veranderen. Ik heb ook veel geleerd over animeren met keyfames. Ik vond de scructuur van de lessen erg fijn en goed werken. Het was fijn om vragen te stellen en we kregen goede hulp.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/schetsen.png" width="375px" alt="eerste versie/schets">
+  Ik heb een aantal dingetjes waar in nog aan wilde werken maar waar ik niet aantoe ben gekomen. Ik wilde namelijk nog een beginscherm toevoegen aan mijn interface. Ook wilde ik de schaduw van de link nog wat aanpassenzodat deze op z'n plek bleef maar iets groter werd als de link dichterbij kwam en iets kleiner als die wat meer omhoog ging. Verder werkt de schaduw in de roze versie van de link niet. Hier wilde ik ook nog naar kijken, maar had ik geen tijd meer voor.
 </details>
 
 
@@ -195,14 +192,14 @@ Afbeeldingen:
 6. https://mungfali.com/post/835522B57332ED87E50B40BC03FA41C889B11BBD
 7. https://mungfali.com/post/5779C735C6AA2516D5035ADDFD695968A5236DFE
 8. https://en.wikipedia.org/wiki/Mickey_Mouse_Clubhouse
-9. ACHTERGROND
+9. https://www.youtube.com/watch?v=pY7hFRg2jvw&t=317s
 
 Font:
 1. https://www.dafont.com/wicked-mouse.font?text=Minnie+mouse
 
 Code:
-<!-- 1. https://animista.net/play/entrances/swing-in -->
-2. https://codepen.io/shooft/pen/WNMpaVg
+1. https://codepen.io/shooft/pen/WNMpaVg
+2. https://codepen.io/maryembekkali/pen/XWZjXyr
 
 Externe link en inspiratie:
 1. https://www.youtube.com/watch?v=3BZ05HSm8_Y
