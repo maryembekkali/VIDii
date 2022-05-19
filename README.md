@@ -162,8 +162,8 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/interfacerood.jpg" width="375px" alt="final ontwerp">
-  <img src="readme-images/interfaceroze.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/interfacerood.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/interfaceroze.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
