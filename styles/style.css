@@ -39,18 +39,21 @@ header{
 /*TEKSTEN*/
 /*********/
 h1 {
-  color: #FF69B6;
   font-family: wicked_mouseregular;
   font-size: 2.5vw;
+  color: #FF69B6;
+  /*color: black;*/
   text-shadow: 0 0 .3em white, 0 0 .3em white;
 }
 
-p {
+p.inleiding {
   font-family: wicked_mouseregular;
   font-size: 1vw;
   width: 30vw;
   color: #DE519A;
-  text-shadow: 0 0 .5em white, 0 0 .5em white;
+  color: #FF69B6;
+  /*color: black;*/
+  text-shadow: 0 0 .3em black, 0 0 .3em black;
 }
 
 
@@ -81,6 +84,7 @@ p {
   position: fixed;
   top: 2vw;
   right: 2vw;
+
   font-size: 1em;
 
   background: none;
@@ -127,10 +131,11 @@ button.logo:active{
 /***********/
 .clubhouse {
   display: block;
+  margin-top: 7vw;
   margin-left: auto;
   margin-right: auto;
+
   width: 45vw;
-  margin-top: 7vw;
 }
 
 img.clubhouse.ikHebHetHuisVeranderd {
@@ -145,10 +150,11 @@ img.clubhouse.ikHebHetHuisVeranderd {
 /*LINK*/
 /******/
 .linkknop{
-  width: 10vw;
   position: absolute;
   top: 25vw;
   right: 9.5vw;
+
+  width: 10vw;
 
   background: none;
   border: none;
@@ -196,11 +202,11 @@ a.linkknop:hover{
 a.linkknop::after {
   content: "";
   position: fixed;
-  width: 10vw;
-  height: 3vw;
-
   top: 150%;
   left: calc(50% - 5vw);
+
+  width: 10vw;
+  height: 3vw;
 
   border-radius: 50%;
   background-image: radial-gradient(closest-side, #051D00, transparent);
@@ -235,11 +241,12 @@ ul.rainbow {
   position:relative;
   top: -55.4vw;
   left: -7vw;
-  z-index: -1;
   
   /* de ul schaalt mee met de breedte van de browser */
   width:65vw;
   aspect-ratio:2/1;
+
+  z-index: -1;
   
   /* de defaul ul dingen uitzetten */
   margin:0;
@@ -326,10 +333,11 @@ ul.rainbow li:nth-of-type(6) {
 /*HAND*/
 /******/
 .hand{
-  width: 15vw;
   position: absolute;
   top: 11vw;
   left: 8.5vw;
+
+  width: 15vw;
 
   background: none;
   border: none;
@@ -372,15 +380,15 @@ ul{
 }
 
 ul.ramen {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
   position:relative;
   top: -21.5vw;
   left: 36.5vw;
+
   width:19vw;
-  display:grid;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   place-items: center; /*zodat alle ramen op dezelfde hoogte komen*/
 }
 
@@ -477,74 +485,58 @@ li button:active{
 /*********/
 /*MINNIES*/
 /*********/
-.minnie1{
-  width: 5.2vw;
-
+.minnie1, .minnie2, .minnie3, .minnie4, .minnie5, .minnie6, .minnie7{
   position: absolute;
+  opacity: 0;
+}
+
+.minnie1{
   top: 34.5vw;
   left: 62vw;
-  
-  opacity: 0;
+
+  width: 5.2vw;
 }
 
 .minnie2{
-  width: 4.6vw;
-
-  position: absolute;
   top: 34vw;
   left: 62vw;
 
-  opacity: 0;
+  width: 4.6vw;
 }
 
 .minnie3{
-  width: 4.8vw;
-
-  position: absolute;
   top: 33.5vw;
   left: 62vw;
 
-  opacity: 0;
+  width: 4.8vw;
 }
 
 .minnie4{
-  width: 4.3vw;
-
-  position: absolute;
   top: 33.5vw;
   left: 62vw;
 
-  opacity: 0;
+  width: 4.3vw;
 }
 
 .minnie5{
-  width: 4.6vw;
-
-  position: absolute;
   top: 34vw;
   left: 62vw;
 
-  opacity: 0;
+  width: 4.6vw;
 }
 
 .minnie6{
-  width: 4.4vw;
-
-  position: absolute;
   top: 34vw;
   left: 62vw;
 
-  opacity: 0;
+  width: 4.4vw;
 }
 
 .minnie7{
-  width: 4.2vw;
-
-  position: absolute;
   top: 34vw;
   left: 62.3vw;
 
-  opacity: 0;
+  width: 4.2vw;
 }
 
 
@@ -576,7 +568,7 @@ img.minnie1.minnie1isgekomen {
 img.minnie2.minnie2isgekomen {
   animation-name: minnie2KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -600,7 +592,7 @@ img.minnie2.minnie2isgekomen {
 img.minnie3.minnie3isgekomen {
   animation-name: minnie3KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -624,7 +616,7 @@ img.minnie3.minnie3isgekomen {
 img.minnie4.minnie4isgekomen {
   animation-name: minnie4KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -648,7 +640,7 @@ img.minnie4.minnie4isgekomen {
 img.minnie5.minnie5isgekomen {
   animation-name: minnie5KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -672,7 +664,7 @@ img.minnie5.minnie5isgekomen {
 img.minnie6.minnie6isgekomen {
   animation-name: minnie6KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -696,7 +688,7 @@ img.minnie6.minnie6isgekomen {
 img.minnie7.minnie7isgekomen {
   animation-name: minnie7KomtNaarBuiten;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -724,16 +716,17 @@ img.minnie7.minnie7isgekomen {
 /*DEUR*/
 /******/
 .deur {
-  width: 5.7vw;
   position: absolute;
   top: 33.5vw;
   left: 61.3vw;
+
+  width: 5.7vw;
 }
 
 img.deur.deDeurIsOpenGegaan{
   animation-name: deurGaatOpen;
   animation-duration: 2s;
-  animation-timing-function:ease-in;
+  animation-timing-function: ease-in;
 }
 
 @keyframes deurGaatOpen{
@@ -766,24 +759,27 @@ img.deur.deDeurIsOpenGegaan{
 
 @media only screen and (max-width: 1200px) {
   ul.rainbow {
-    width: 63vw;
     top: -54.4vw;
     left: -9vw;
+
+    width: 63vw;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   ul.rainbow {
-    width: 60vw;
     top: -53.4vw;
     left: -11vw;
+
+    width: 60vw;
   }
 }
 
 @media only screen and (max-width: 800px) {
   ul.rainbow {
-    width: 57vw;
     top: -52.4vw;
     left: -13vw;
+
+    width: 57vw;
   }
 }

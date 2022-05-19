@@ -16,7 +16,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Maryem Bekkali
 
 #### Je startniveau:
-Mijn startniveau is: Rood
+Mijn startniveau is: Blauw/Rood --> Paars 🤷🏽‍♀️
+Dit is niet de eerste keer voor mij dat ik ga coderen, maar veel is wel weg gezakt omdat ik het niet vaak doe. Begrijpen gaat vaak wel, maar om zelf te bedenken hoe ik iets moet doen vind ik nog lastig.
+
 
 
 # Je plan
@@ -47,7 +49,8 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Tot nu toe heb ik niet echt ervaring met JavaScript. Ik wil hier beter in worden en het beter begrijpen.
-  - Tijdens Webtypografie heb ik gewerkt met keyframes om animaties te maken in CSS. Dat was de eerste keer dat ik daarmee werkte. Ik wil tijdens deze opdracht keyframes gebruiken voor mijn animaties om diet beter onder de knie te krijgen.
+  - Tijdens Webtypografie heb ik gewerkt met keyframes om animaties te maken in CSS. Dat was denk ik de eerste keer dat ik daarmee werkte. Ik wil tijdens deze opdracht keyframes gebruiken voor mijn animaties om dit beter onder de knie te krijgen.
+  - Positioneren met CSS vind ik nog best lastig. Vooral grid begrijp ik nog niet zo goed. Dit wil ik minimaal 1 keer gebruiken voor mijn interface om er mee te oefenen.
  
 </details>
 
@@ -57,26 +60,22 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen</summary>
+
+  ### Feedback:
+  Voor de les van dinsdag 10 mei had ik mijn concept op Miro gezet. Omdat ik deze les had gemist en mijn concept nog niet duidelijk was op Miro heb ik dit eerst aangevuld voordat ik feedback ben gaan vragen. Ik heb feedback van Senna en Daphne gekregen. Eigenlijk heb ik bijna alleen maar positieve feedback gehad.
+    1. Het idee past bij het karakter.
+    2. De transities zijn goed doordacht.
+    3. Leuk idee om de ramen te gebruiken voor de verschillende versies van Minnie Mouse.
+    4. Leuke details die iets extra's toevoegen aan het concept zoals het handje met de regenboog.
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  'Je kan misschien nog kijken hoe je je beschinscherm wil introduceren.'
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Hier heb ik nog even over nagedacht. Ik had het idee om een beginscherm te maken waarbij Minnie Mouse om het magische woord vraagt voordat het clubhuis tevoorschijn komt. Dit gebeurt namelijk ook in de introductie van de tekenfilm. Ik heb uiteindelijk geen tijd meer over gehad om dit uit te werken.
 
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  <img src="readme-images/feedback1.png" width="500px" alt="eerste versie/schets">
 
 </details>
 
@@ -86,7 +85,7 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen</summary>
   
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
