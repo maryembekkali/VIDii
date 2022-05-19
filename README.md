@@ -131,20 +131,20 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  
+
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Je zou nog een muziekje kunnen toevoegen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Dit wilde ik toevoegen aan het beginscherm, maar daar had ik geen tijd meer voor.
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Je zou nog jaartallen kunnen toevoegen bij elke nieuwe minni mouse.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Dit heb ik geprobeerd op te zoeken, maar ik kon niet vinden wat de jaartallen precies waren. Ik heb hiervoor een h2 element toegevoegd waarin staat dat het vanaf 1928 tot 2019 is.
 
 
 
