@@ -42,7 +42,6 @@ h1 {
   font-family: wicked_mouseregular;
   font-size: 2.5vw;
   color: #FF69B6;
-  /*color: black;*/
   text-shadow: 0 0 .3em white, 0 0 .3em white;
 }
 
@@ -50,7 +49,6 @@ h2 {
   font-family: wicked_mouseregular;
   font-size: 1.5vw;
   color: #FF69B6;
-  /*color: black;*/
   text-shadow: 0 0 .3em white, 0 0 .3em white;
 }
 
@@ -242,6 +240,7 @@ a.linkknop:active{
 /***********/
 /*REGENBOOG*/
 /***********/
+/*BRON: SANNE 'T HOOFT - https://codepen.io/maryembekkali/pen/XWZjXyr*/
 ul.rainbow {
   /* om de li's binnen de ul te houden*/
   position:relative;
@@ -764,6 +763,12 @@ img.deur.deDeurIsOpenGegaan{
 
     width: 63vw;
   }
+
+  ul.ramen {
+    position:relative;
+    top: -21.8vw;
+    left: 35.7vw;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -781,5 +786,11 @@ img.deur.deDeurIsOpenGegaan{
     left: -13vw;
 
     width: 57vw;
+  }
+  
+  ul.ramen {
+    position:relative;
+    top: -22.5vw;
+    left: 35vw;
   }
 }

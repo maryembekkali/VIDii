@@ -146,6 +146,23 @@ Door op het logo te klikken veranderd deze van 'Mickey Mouse Clubhouse' naar 'Mi
   #### oplossing:
   Dit heb ik geprobeerd op te zoeken, maar ik kon niet vinden wat de jaartallen precies waren. Ik heb hiervoor een h2 element toegevoegd waarin staat dat het vanaf 1928 tot 2019 is.
 
+
+
+  ### Bevinding 3:
+  Je achtergrond covert nog niet het gehele scherm, waardoor er onder de pagina een witte balk is te zien
+
+  #### oplossing:
+  Op mijn beelscherm word de afbeelding wel op het hele scherm getoond. 
+
+
+
+
+  ### Bevinding 4:
+  Alles schaalt mee als ik het beeld kleiner maak, ook je ramen, maar je ramen komen niet op de juiste plek
+
+  #### oplossing:
+  Ik heb de positie van de ramen gewijzigd door middel van media queries.
+
 </details>
 
 

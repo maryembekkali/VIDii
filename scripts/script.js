@@ -194,6 +194,7 @@ function minnie7komt() {
 ////////////
 // REGENBOOG
 ////////////
+// BRON: SANNE 'T HOOFT - https://codepen.io/maryembekkali/pen/XWZjXyr
 var deHandButton = document.querySelector(".hand");
 var deRegenboog = document.querySelector("ul.rainbow");
 
