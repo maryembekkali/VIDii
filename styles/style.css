@@ -7,6 +7,35 @@
 
 }
 
+:root {
+  --heading-color: #FF69B6;
+  --heading-shadow: 0 0 .3em white, 0 0 .3em white;
+  --text-color: #DE519A;
+  --text-shadow: 0 0 .5em white, 0 0 .5em white, 0 0 .5em white;
+  --hover-color:  drop-shadow(0em 0em .25em gold)
+                  drop-shadow(0em 0em .5em gold)
+                  drop-shadow(0em 0em 1em orange);
+  --focus-logo:   drop-shadow(0em 0em .25em #046887)
+                  drop-shadow(0em 0em .5em #09A9DA)
+                  drop-shadow(0em 0em 1em #00C3FF);
+  --link-schaduw: radial-gradient(closest-side, #051D00, transparent);
+  --link-focus: drop-shadow(0em 0em .25em black)
+                drop-shadow(0em 0em .5em #17620B)
+                drop-shadow(0em 0em 1em #46AF35);
+  --regenboog-rood: #FC6687;
+  --regenboog-oranje: #FFC764;
+  --regenboog-geel: #FDFF42;
+  --regenboog-groen: #3FFDA6;
+  --regenboog-blauw: #54DBFD;
+  --regenboog-paars: #D07AF4;
+  --focus-hand: drop-shadow(0em 0em .25em black)
+                drop-shadow(0em 0em .5em #17620B)
+                drop-shadow(0em 0em 1em #46AF35);
+  --focus-raam: drop-shadow(0em 0em .25em #63030D)
+                drop-shadow(0em 0em .5em #9F0B1A)
+                drop-shadow(0em 0em 1em #FF2E43);
+}
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -41,23 +70,23 @@ header{
 h1 {
   font-family: wicked_mouseregular;
   font-size: 2.5vw;
-  color: #FF69B6;
-  text-shadow: 0 0 .3em white, 0 0 .3em white;
+  color: var(--heading-color);
+  text-shadow: var(--heading-shadow);
 }
 
 h2 {
   font-family: wicked_mouseregular;
   font-size: 1.5vw;
-  color: #FF69B6;
-  text-shadow: 0 0 .3em white, 0 0 .3em white;
+  color: var(--heading-color);
+  text-shadow: var(--heading-shadow);
 }
 
 p.inleiding {
   font-family: wicked_mouseregular;
   font-size: 1vw;
   width: 30vw;
-  color: #DE519A;
-  text-shadow: 0 0 .5em white, 0 0 .5em white, 0 0 .5em white;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
 }
 
 
@@ -105,10 +134,7 @@ p.inleiding {
 
 /*LOGO BUTTON STATES*/
 button.logo:hover{
-   filter:
-    drop-shadow(0em 0em .25em gold)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange); 
+   filter: var(--hover-color); 
 }
 
 button.logo:focus{
@@ -116,10 +142,7 @@ button.logo:focus{
 }
 
 button.logo:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em #046887)
-    drop-shadow(0em 0em .5em #09A9DA)
-    drop-shadow(0em 0em 1em #00C3FF);
+  filter: var(--focus-logo);
 }
 
 button.logo:active{
@@ -197,10 +220,7 @@ img.clubhouse.ikHebHetHuisVeranderd {
 
 /*LINK BUTTON STATES*/
 a.linkknop:hover{
-  filter:
-    drop-shadow(0em 0em .25em yellow)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange);
+  filter: var(--hover-color);
 }
 
 a.linkknop::after {
@@ -213,7 +233,7 @@ a.linkknop::after {
   height: 3vw;
 
   border-radius: 50%;
-  background-image: radial-gradient(closest-side, #051D00, transparent);
+  background-image: var(--link-schaduw);
   filter: blur(5px);
 }
 
@@ -222,11 +242,7 @@ a.linkknop:focus{
 }
 
 a.linkknop:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em black)
-    drop-shadow(0em 0em .5em #17620B)
-    drop-shadow(0em 0em 1em #46AF35);
-
+  filter: var(--link-focus);
 }
 
 a.linkknop:active{
@@ -268,14 +284,16 @@ ul.rainbow {
 
 /* alle bogen */
 ul.rainbow li {
+  --boogmaat: 1vw;
+
   position:absolute;
-  width:calc(100% - 2em * var(--index));
-  height:calc(100% - 1em * var(--index));
+  width:calc(100% - var(--boogmaat )* 2 * var(--index));
+  height:calc(100% - var(--boogmaat) * var(--index));
   
   background-image:radial-gradient(
     farthest-side circle at center bottom,
-    transparent calc(100% - 1em - .5px),
-    var(--color) calc(100% - 1em)
+    transparent calc(100% - var(--boogmaat) - .5px),
+    var(--color) calc(100% - var(--boogmaat))
   );
   border-radius:50% 50% 0 0 / 100% 100% 0 0;
   
@@ -297,37 +315,37 @@ ul.hopla li {
 /* rood */
 ul.rainbow li:nth-of-type(1) {
   --index:0;
-  --color:#FC6687;
+  --color: var(--regenboog-rood);
 }
 
 /* oranje */
 ul.rainbow li:nth-of-type(2) {
   --index:1;
-  --color:#FFC764;
+  --color: var(--regenboog-oranje);
 }
 
 /* geel */
 ul.rainbow li:nth-of-type(3) {
   --index:2;
-  --color:#FDFF42;
+  --color: var(--regenboog-geel);
 }
 
 /* groen */
 ul.rainbow li:nth-of-type(4) {
   --index:3;
-  --color:#3FFDA6;
+  --color: var(--regenboog-groen);
 }
 
 /* blauw */
 ul.rainbow li:nth-of-type(5) {
   --index:4;
-  --color:#54DBFD;
+  --color: var(--regenboog-blauw);
 }
 
 /* paars */
 ul.rainbow li:nth-of-type(6) {
   --index:5;
-  --color:#D07AF4;
+  --color: var(--regenboog-paars);
 }
 
 
@@ -350,10 +368,7 @@ ul.rainbow li:nth-of-type(6) {
 
 /*HAND BUTTON STATES*/
 button.hand:hover{
-  filter:
-    drop-shadow(0em 0em .25em gold)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em orange);
+  filter: var(--hover-color);
 }
 
 button.hand:focus{
@@ -361,10 +376,7 @@ button.hand:focus{
 }
 
 button.hand:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em black)
-    drop-shadow(0em 0em .5em #17620B)
-    drop-shadow(0em 0em 1em #46AF35);
+  filter: var(--focus-hand);
 }
 
 button.hand:active{
@@ -463,10 +475,7 @@ ul.ramen li:nth-of-type(7n){
 
 /*RAAM BUTTON STATES*/
 li button:hover{
-  filter:
-    drop-shadow(0em 0em .25em yellow)
-    drop-shadow(0em 0em .5em gold)
-    drop-shadow(0em 0em 1em gold);
+  filter: var(--hover-color);
 }
 
 li button:focus{
@@ -474,10 +483,7 @@ li button:focus{
 }
 
 li button:focus-visible{
-  filter:
-    drop-shadow(0em 0em .25em #63030D)
-    drop-shadow(0em 0em .5em #9F0B1A)
-    drop-shadow(0em 0em 1em #FF2E43);
+  filter: var(--focus-raam);
 }
 
 li button:active{
@@ -757,7 +763,7 @@ img.deur.deDeurIsOpenGegaan{
 /****************/
 /*RESPONSIVENESS*/
 /****************/
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   ul.rainbow {
     top: -54.4vw;
     left: -9vw;
@@ -772,7 +778,7 @@ img.deur.deDeurIsOpenGegaan{
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   ul.rainbow {
     top: -53.4vw;
     left: -11vw;
@@ -782,7 +788,7 @@ img.deur.deDeurIsOpenGegaan{
 
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   ul.rainbow {
     top: -52.4vw;
     left: -13vw;

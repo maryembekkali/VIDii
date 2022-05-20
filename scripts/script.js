@@ -25,7 +25,7 @@ function ikHebVeranderd() {
 ////////
 var raamButton1 = document.querySelector(".raam1");
 
-var raam1 = document.querySelector(".raam1 img");
+// var raam1 = document.querySelector(".raam1 img");
 var deMinnie1Img = document.querySelector(".minnie1");
 var deDeurImg = document.querySelector(".deur");
 
